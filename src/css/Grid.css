@@ -1,0 +1,49 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:100px; 
+
+}
+.grid .grid.scatter >div {
+    width:100% ; 
+}
+.grid.scatter > div{
+    width:66%;
+}
+.grid.scatter > *:not(.popup):nth-of-type(odd) {
+    top:0%; 
+    margin-left: 20%; 
+}
+.grid.scatter > *:not(.popup):nth-of-type(even) {
+    justify-self: right ;
+    top:25%; 
+    margin-right: 20%; 
+}
+.grid.scatter > *:not(.popup):nth-of-type(3n) {
+    top:-10% !important; 
+    margin-left: 5% !important; 
+
+}
+.grid.scatter > *:not(.popup):nth-of-type(4n) {
+    top:20% !important; 
+    margin-right: 35% !important
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.flex.scatter > *:not(.popup):nth-of-type(odd){
+
+}
+.flex.scatter > *:not(.popup):nth-of-type(even){
+    padding-left:5%;
+}
+.flex.scatter > *:not(.popup):nth-of-type(3n) {
+    margin-right: 5% !important; 
+}
+
+

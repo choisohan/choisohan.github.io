@@ -1,0 +1,11 @@
+.mediaViewer{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.mediaViewer::after{
+    content: attr(description);
+    font-size: 12px;
+    opacity: .5;
+}

@@ -1,0 +1,76 @@
+@import url(Grid.css);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.hidden{
+    display: none !important;
+}
+.page{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .2s;
+}
+
+.page > div {
+    position: relative;
+}
+
+.screen{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh; 
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.164);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.screen .container{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(233, 233, 233); 
+    padding: 10px;
+    border-radius: 7px;
+}
+
+img , video {
+    max-width :100%;
+    max-height :100%;
+}
+
+
+/* */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #dedede; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8; 
+  }
