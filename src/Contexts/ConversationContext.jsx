@@ -40,11 +40,9 @@ export const ConversationContextProvider = ( {children} )=>  {
     }
 
     useEffect(()=>{
-        if( history ){
-            console.log( {history:history} )
-            if(history.length > 0 ){
-                navigate(history[history.length - 1])
-            }
+        if(history.length > 0 ){
+            navigate(history[history.length - 1])
+            localStorage.setItem('history', JSON.stringify(history) )
         }
     },[history])
 

@@ -86,6 +86,7 @@ const App =  ()=> {
                 var url = window.location.pathname.replace('/','');
                 if(url.length<1){_history.push('1')}
                 else{_history.push(url)}
+                console.log({init: _history })
                 addHistory(_history )
 
           }) 
