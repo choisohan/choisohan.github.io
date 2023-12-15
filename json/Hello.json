@@ -1,0 +1,569 @@
+{
+  "passages": [
+    {
+      "text": "Hello. This is Min.👋\nWant to chat with me?\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
+      "links": [
+        {
+          "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ",
+          "link": "The Perspective project",
+          "pid": "6"
+        },
+        {
+          "name": "<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ",
+          "link": "Bobo",
+          "pid": "5"
+        },
+        {
+          "name": "<img src='/media/game_facial.gif'> ",
+          "link": "Facial",
+          "pid": "4"
+        },
+        {
+          "name": "<img src ='/media/that timeline.png' >",
+          "link": "Web Projects*",
+          "pid": "19"
+        },
+        {
+          "name": "Wait..Who are you?",
+          "link": "Who are you?",
+          "pid": "12"
+        }
+      ],
+      "name": "Hello*",
+      "pid": "1",
+      "position": {
+        "x": "1650",
+        "y": "550"
+      }
+    },
+    {
+      "text": "<img src='/media/sunset.gif'><img src='/media/sunset-msg.gif'><img src='/media/timeshift.gif'>\n\nSunset Avenue is a web application project initiated in mid-2023. The concept revolves around crafting an image box integrated with Google Calendar, allowing the display to evolve over time.\n\nPersonally, the idea is inspired by the daily challenges of communication with my overseas family. It also stems from my longstanding quest to strike a delicate balance between digital and classical art.\n\nThe project is developed in Node.Js, React, Express, MongoDB, Socket.io\n\n[[What did you learn from this project?->learned from sunset]]\n[[What other web project did you work on?->Web Projects*]]",
+      "links": [
+        {
+          "name": "What did you learn from this project?",
+          "link": "learned from sunset",
+          "pid": "3"
+        },
+        {
+          "name": "What other web project did you work on?",
+          "link": "Web Projects*",
+          "pid": "19"
+        }
+      ],
+      "name": "Sunset Ave",
+      "pid": "2",
+      "position": {
+        "x": "1925",
+        "y": "775"
+      }
+    },
+    {
+      "text": "This project taught me a great deal, both technically and philosophically. On the technical side, I delved deep into backend development.\n\nFrom a philosophical standpoint, redesigning the UI multiple times made me ponder the profound impact of design on our perception of objects. Additionally, contemplating the ancient belief in the sun as a god revealed its rationality when considering our dependency on its position for life itself. It's fascinating to think how, as modern humans, we continue to live our lives in sync with the sun each day.",
+      "name": "learned from sunset",
+      "pid": "3",
+      "position": {
+        "x": "2000",
+        "y": "1000"
+      }
+    },
+    {
+      "text": "<img src='/media/game_facial.gif'>\n\nI've worked as an professional facial artist in film, game industry.\nNot only is observing the deformation of flesh and creating emotional expressions enjoyable, but also the communication between the artistic and technical aspects of the work is both fun and rewarding.\n\nInitially, I focused solely on facial modeling. However, later on, I expanded my skills to include rigging and Python. I even worked as a facial Technical Director for independent projects.\n\n<img src='/media/game_facial_ctrl.gif'> <img src='/media/shapeeditor.jpg'>\nMy custom shape editor for freelance work\n\n( ...but I've gained facial wrinkles, unsure if it's natural aging or from using my face as a reference too much. 🧓) ",
+      "name": "Facial",
+      "pid": "4",
+      "position": {
+        "x": "1750",
+        "y": "725"
+      }
+    },
+    {
+      "text": "This is Bobo the Orangutan.\nThe project I started many years ago as Interactive Artwork\nBobo can see you from webcam and follow your expression and play with you.\n\n<video autoplay muted loop><source src='/media/bobo3.mp4'></video>\n\nI worked from modeling, texturing, rigging, animation, build the interaction with Computer Vision.\n<img src ='/media/bobo4.png'>\n<img src='/media/bobo5.jpg'>\n\n\nIf you like this, check out [[Beluga Project]] as well. \n\n[[What is the status of Bobo Project?->Why Stopped?]]\n[[Show me other interactive projects!->Interactive Artwork*]] ",
+      "links": [
+        {
+          "name": "Beluga Project",
+          "link": "Beluga Project",
+          "pid": "17"
+        },
+        {
+          "name": "What is the status of Bobo Project?",
+          "link": "Why Stopped?",
+          "pid": "18"
+        },
+        {
+          "name": "Show me other interactive projects!",
+          "link": "Interactive Artwork*",
+          "pid": "25"
+        }
+      ],
+      "name": "Bobo",
+      "pid": "5",
+      "position": {
+        "x": "2600",
+        "y": "600"
+      }
+    },
+    {
+      "text": "<video autoplay control><source src='/media/muse_gorila_short.mp4'></video>\n\n\"There is only a perspective seeing, only a perspective \"knowing\"; and the more affects we allow to speak about one thing, the more eyes, different eyes, we can use to observe one thing, the more complete will our \"concept\" of this thing, our \"objectivity,\" be.\"\n- Friedrich Nietzsche \n\nAfter working on dozens of diverse animal projects, \"finally,\" humans have come into my focus. It's peculiar that my own species is the latest subject, but it feels different now. People who are different from me don't seem annoying anymore; instead, it's astonishing!\n\nThe Project Perspectives is an interactive web art exhibit created in 2021. Visitors entering the site can experience different perspectives of characters in the scene, and the space takes on warmth based on who you are observing.\n\nThis project emerged as I delved into delivering a distinct experience of sculpture in digital format. It stands out as one of my favorite creations.\n\n<video muted autoplay loop><source src='/media/VR_gorilla.mov'></video>\n(It's available in VR as well)\n\nThe sculptures were crafted using ZBrush and Blender, while the coding aspect utilized THREE.js and GLSL.\n\n[[Beautiful Idea! How can I try?->Try Perspectives]]\n[[What other web project did you work on?->Web Projects*]]",
+      "links": [
+        {
+          "name": "Beautiful Idea! How can I try?",
+          "link": "Try Perspectives",
+          "pid": "20"
+        },
+        {
+          "name": "What other web project did you work on?",
+          "link": "Web Projects*",
+          "pid": "19"
+        }
+      ],
+      "name": "The Perspective project",
+      "pid": "6",
+      "position": {
+        "x": "2450",
+        "y": "900"
+      }
+    },
+    {
+      "text": "... Opting for a grid view is the conventional choice for an artist's portfolio. However, for some reason, it just doesn't align with my purpose.\n\nI believe people anticipate different things from me. Some appreciate my works focused on digital art, while others enjoy my interactive projects in game engines. Some are drawn to my coding projects, and personally, I find sharing my thoughts to be the most rewarding.\n\nIn the end, I realized I can't mold myself to fit everyone's expectations, so I decided to embrace it. I created a system where people can customize their page based on their preferences. The page is saved in local browser storage, ensuring that everyone can view my portfolio in their own unique way.\n\n[[How did you make this site?->Making this site?]]",
+      "links": [
+        {
+          "name": "How did you make this site?",
+          "link": "Making this site?",
+          "pid": "9"
+        }
+      ],
+      "name": "This Site",
+      "pid": "7",
+      "position": {
+        "x": "1700",
+        "y": "1000"
+      }
+    },
+    {
+      "text": "Thank you for saying that❤️‍🔥\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
+      "name": "Keep going!",
+      "pid": "8",
+      "position": {
+        "x": "2900",
+        "y": "900"
+      }
+    },
+    {
+      "text": "<img src='/media/twine-screenshot.png'>\n\nConversation is designed with Twine and React.\nYou can clone <a href='https://github.com/choisohan/choisohan.github.io' target='_blank'> the repo </a> and modify as your own.",
+      "name": "Making this site?",
+      "pid": "9",
+      "position": {
+        "x": "1750",
+        "y": "1175"
+      }
+    },
+    {
+      "text": "I have but rarely update.\nThere are two main reasons.\n\n1. Video compression is horrible there.\n2. It makes me less productive\n\nI particularly sensed that social media platforms were pushing me towards obsessively posting rather than focusing on improving the quality of my work. I acknowledge that it's not entirely negative, but I am aware of my tendencies. As a result, I've chosen to maintain some distance from social media, even though I miss the productive interactions it offers at times.\n\nIf you like talk, [[contact->contact*]] me directly.",
+      "links": [
+        {
+          "name": "contact",
+          "link": "contact*",
+          "pid": "15"
+        }
+      ],
+      "name": "SNS?",
+      "pid": "10",
+      "position": {
+        "x": "1425",
+        "y": "1000"
+      }
+    },
+    {
+      "text": "<img src ='/media/that timeline.png' >\n\n<a href='https://choisohan.github.io/that-timeline/'  target=\"_blank\">Timeline</a> is a straightforward quiz web application crafted in 2023 to aid in the comprehension of the chronological order of historical events. The concept originated from my desire to alleviate the stress associated with studying history. The game's rules and visual design draw significant inspiration from the board game <a href='https://boardgamegeek.com/boardgame/262543/wavelength'>Wavelength</a>.\n\nThis application is built using NodeJs and React, with the historical database benefiting from ChatGPT's assistance. I manually researched individual events to enhance the accuracy and richness of the historical content.\n\n[[What other web project did you work on?->Web Projects*]]",
+      "links": [
+        {
+          "name": "What other web project did you work on?",
+          "link": "Web Projects*",
+          "pid": "19"
+        }
+      ],
+      "name": "That Timeline",
+      "pid": "11",
+      "position": {
+        "x": "2100",
+        "y": "800"
+      }
+    },
+    {
+      "text": "If you ask \"what I can\", I trained myself as an artist.\nI can paint, sculpt as natural.\n\n<img src ='/media/painting_chimp.jpg' <img src ='/media/paint_fruits.jpg'> [[show me more of your arts ->Drawings]] \n\nI've worked in various films and games, animations, application as a digital artist.\n[[Tell me about your professional experience.->Professional Experience]]\n\nIn the last few years, I discovered the beauty of programming, landed a full-time developer position. \n\nYet I'm not just my skills; I'm more like a blob of curiosity⭐.\n\n[[What do you mean by a blob of curiosity?->I'm a blob]]\n[[How are you doing thesedays?->Thesedays*]]\n[[What is this site?->This Site]]\n\n[[I have a question for you. How can I reach out to you?->contact*]]\n[[I like to see more of you work. Do you have SNS?->SNS?]] \n",
+      "links": [
+        {
+          "name": "show me more of your arts ",
+          "link": "Drawings",
+          "pid": "22"
+        },
+        {
+          "name": "Tell me about your professional experience.",
+          "link": "Professional Experience",
+          "pid": "16"
+        },
+        {
+          "name": "What do you mean by a blob of curiosity?",
+          "link": "I'm a blob",
+          "pid": "26"
+        },
+        {
+          "name": "How are you doing thesedays?",
+          "link": "Thesedays*",
+          "pid": "13"
+        },
+        {
+          "name": "What is this site?",
+          "link": "This Site",
+          "pid": "7"
+        },
+        {
+          "name": "I have a question for you. How can I reach out to you?",
+          "link": "contact*",
+          "pid": "15"
+        },
+        {
+          "name": "I like to see more of you work. Do you have SNS?",
+          "link": "SNS?",
+          "pid": "10"
+        }
+      ],
+      "name": "Who are you?",
+      "pid": "12",
+      "position": {
+        "x": "1550",
+        "y": "725"
+      }
+    },
+    {
+      "text": "Thanks for asking! 🥹\nAfter I left the lastest full time job, I traveled and spend time for learning and developing myself. \nIn 2023, I've been mostly doing web-development projects. ([[Mupp]], [[Sunset Ave]] , [[That Timeline]] )\n\nNow I am more open to find a opportunity for collaboration.\nThat's why I renovate my site haha 🤞\n\n[[Lucky you! I have a job for you!->contact*]]\n\nOn another note, I'm currently residing somewhere in Vancouver, dedicated to expanding my knowledge and thoughts through reading and studying. Additionally, I've found a philosophical beauty in playing board games, which keeps myself playful .🎉\n\n[[I have a question for you. How can I reach out to you?->contact*]]",
+      "links": [
+        {
+          "name": "Mupp",
+          "link": "Mupp",
+          "pid": "14"
+        },
+        {
+          "name": "Sunset Ave",
+          "link": "Sunset Ave",
+          "pid": "2"
+        },
+        {
+          "name": "That Timeline",
+          "link": "That Timeline",
+          "pid": "11"
+        },
+        {
+          "name": "Lucky you! I have a job for you!",
+          "link": "contact*",
+          "pid": "15"
+        },
+        {
+          "name": "I have a question for you. How can I reach out to you?",
+          "link": "contact*",
+          "pid": "15"
+        }
+      ],
+      "name": "Thesedays*",
+      "pid": "13",
+      "position": {
+        "x": "1850",
+        "y": "1025"
+      }
+    },
+    {
+      "text": "Mupp is extended project from [[The Perspective project]].\n\nThe initial concept is an online museum space that allows interaction with other visitors online simultaneously. It's currently under construction. To be honest, I'm taking a break to refresh my ideas.\n\n<video muted autoplay loop><source src='/media/sequence1.mp4'></video><video muted autoplay loop><source src='/media/muse_gallery.mp4'></video>\n\n[[Beautiful Idea! How can I try?->Try Perspectives]]",
+      "links": [
+        {
+          "name": "The Perspective project",
+          "link": "The Perspective project",
+          "pid": "6"
+        },
+        {
+          "name": "Beautiful Idea! How can I try?",
+          "link": "Try Perspectives",
+          "pid": "20"
+        }
+      ],
+      "name": "Mupp",
+      "pid": "14",
+      "position": {
+        "x": "2550",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "👇email me\nmjwithu09@gmail.com\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
+      "name": "contact*",
+      "pid": "15",
+      "position": {
+        "x": "1400",
+        "y": "1200"
+      }
+    },
+    {
+      "text": "- Soul Machines : Senior CG Developer (2022)\n- Adobe : Freelance AR Project Creator (2020)\n- The Mill NY : Freelance Modeler (2020)\n- Digital Domain : Senior Facial Modeler (2018-2019)\n- Campo Santo : Freelance Modeler & Facial Rigger(2018)\n- Weta Digital : Facial Modeler(2016-2017)\n- ScanlineVFX : 3D Modeler(2014-2016)\n\nThe latest Job was first time for me as developer creating 3D application with game engine.\n\nIf you want to see my old VFX reel then [[here it is.->2017 VFX modeling reel]].",
+      "links": [
+        {
+          "name": "here it is.",
+          "link": "2017 VFX modeling reel",
+          "pid": "21"
+        }
+      ],
+      "name": "Professional Experience",
+      "pid": "16",
+      "position": {
+        "x": "2050",
+        "y": "1200"
+      }
+    },
+    {
+      "text": "<video autoplay control loop><source src='/media/unity_beluga.mp4' ></video>->\n\nBeluga is one of early interactive animal project. I strategically opted for a whale because 90% of the animation involves the spine, making it simpler than limb animations.\n\nA beluga detects a human position through the camera,\n<img src='/media/1027_motionDetect.gif'>\n\nand procedurally creates the motion per frame. \n<img src ='/media/1021_ai.gif'>\n\nThat time, I  loved Computer Vision so much. I wanted to connect everything with CV. 😂 ( it continued to [[Bobo]] )\n\n<img src = '/media/beluga_1.gif'>\n<img src='/media/whales.png'>\n\n[[Why did you stop Beluga Project?->Why Stopped?]]\n[[Show me more of the interactive Artworks->Interactive Artwork*]] ",
+      "links": [
+        {
+          "name": "Bobo",
+          "link": "Bobo",
+          "pid": "5"
+        },
+        {
+          "name": "Why did you stop Beluga Project?",
+          "link": "Why Stopped?",
+          "pid": "18"
+        },
+        {
+          "name": "Show me more of the interactive Artworks",
+          "link": "Interactive Artwork*",
+          "pid": "25"
+        }
+      ],
+      "name": "Beluga Project",
+      "pid": "17",
+      "position": {
+        "x": "2575",
+        "y": "850"
+      }
+    },
+    {
+      "text": "Time is limited, and I can only do so much in a given period. The longer a project goes on, the more I realize how little I actually know. In each endeavor, I strive for depth rather than surface-level results. This often means taking a step back, studying more, and delving into the intricacies of the work.\n\n[[I love what you do! Please don't give up!->Keep going!]] ",
+      "links": [
+        {
+          "name": "I love what you do! Please don't give up!",
+          "link": "Keep going!",
+          "pid": "8"
+        }
+      ],
+      "name": "Why Stopped?",
+      "pid": "18",
+      "position": {
+        "x": "2775",
+        "y": "675"
+      }
+    },
+    {
+      "text": "About Web project... \nI was always a big fan of NotionHQ or Miro etc.\nAnd some point, I wishing to have more functionality for my self and started learn to create it. \nAt the beggining, I wasn't really interested in learning so much because I was already happy with my python and c# coding ability that time.\nHowever when I realize the accessiblity of the creation, I immidiately fell in love. \n\n[[<img src='/media/sunset.gif'> ->Sunset Ave]]  [[<img src ='/media/that timeline.png' >->That Timeline]]  [[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video>->The Perspective project]] ",
+      "links": [
+        {
+          "name": "<img src='/media/sunset.gif'> ",
+          "link": "Sunset Ave",
+          "pid": "2"
+        },
+        {
+          "name": "<img src ='/media/that timeline.png' >",
+          "link": "That Timeline",
+          "pid": "11"
+        },
+        {
+          "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video>",
+          "link": "The Perspective project",
+          "pid": "6"
+        }
+      ],
+      "name": "Web Projects*",
+      "pid": "19",
+      "position": {
+        "x": "2100",
+        "y": "600"
+      }
+    },
+    {
+      "text": "It has been available online but I put it down for now due to the construction.\nIf there is demand, I can make it accessable again.\nPlease contact me through [[here->contact*]] ",
+      "links": [
+        {
+          "name": "here",
+          "link": "contact*",
+          "pid": "15"
+        }
+      ],
+      "name": "Try Perspectives",
+      "pid": "20",
+      "position": {
+        "x": "2275",
+        "y": "1200"
+      }
+    },
+    {
+      "text": "<video control control><source src='/media/minjeong shin vfx reel 2017.mp4'></video>",
+      "name": "2017 VFX modeling reel",
+      "pid": "21",
+      "position": {
+        "x": "1900",
+        "y": "1200"
+      }
+    },
+    {
+      "text": "<img src='/media/sketch_gorillas.png'> <img src ='/media/paint_woman.jpg'> <img src ='/media/paint_fruits.jpg'><img src='/media/sketer.jpg'> <img src ='/media/sketch_tiger.jpg'> <img src ='/media/fishes.jpg'><img src ='/media/jungle.jpg'><img src='/media/chimpSitting.jpg'><img src='/media/chubbyCat.jpg'><img src='/media/paint_fruits.jpg'>\n\n[[Show me your sculptings now->Sculpts]]",
+      "links": [
+        {
+          "name": "Show me your sculptings now",
+          "link": "Sculpts",
+          "pid": "23"
+        }
+      ],
+      "name": "Drawings",
+      "pid": "22",
+      "position": {
+        "x": "1300",
+        "y": "850"
+      }
+    },
+    {
+      "text": "The latest extensive sculpting project was [[The Perspective project]] \nThese are the still cuts of each sculptures\n<img src='/media/sculpt_gorilla.jpg'>\n\nAnd here are my oldies I sculpted with oil clay\n<img src='/media/clay_girl.jpg'><img src='/media/clay_girl2.jpg'><img src='/media/clay_man.jpg'>\n\nEspecially I loved observing facial expression, It lead me into [[Facial]]",
+      "links": [
+        {
+          "name": "The Perspective project",
+          "link": "The Perspective project",
+          "pid": "6"
+        },
+        {
+          "name": "Facial",
+          "link": "Facial",
+          "pid": "4"
+        }
+      ],
+      "name": "Sculpts",
+      "pid": "23",
+      "position": {
+        "x": "1300",
+        "y": "1000"
+      }
+    },
+    {
+      "text": "<video muted autoplay loop><source src='/media/ar_turtle.mp4'></video>\n<video muted autoplay loop><source src='/media/ar_jump.mp4'></video>\nFun little project with Spark AR",
+      "name": "AR Projects",
+      "pid": "24",
+      "position": {
+        "x": "2450",
+        "y": "1100"
+      }
+    },
+    {
+      "text": "Real-time interactive artwork stands out as a unique realm where digital art excels compared to other mediums. I embarked on this journey using Unity3D as my initial platform, gradually expanding to various other platforms and tools. Lately, I've found myself gravitating more towards web browser-friendly interactive art compared to before.\n\n[[Unity3D Projects->Bobo]]\n[[AR Projects]] \n[[Web GL Project->The Perspective project]]\n[[Generative Art->Generative Art*]]",
+      "links": [
+        {
+          "name": "Unity3D Projects",
+          "link": "Bobo",
+          "pid": "5"
+        },
+        {
+          "name": "AR Projects",
+          "link": "AR Projects",
+          "pid": "24"
+        },
+        {
+          "name": "Web GL Project",
+          "link": "The Perspective project",
+          "pid": "6"
+        },
+        {
+          "name": "Generative Art",
+          "link": "Generative Art*",
+          "pid": "28"
+        }
+      ],
+      "name": "Interactive Artwork*",
+      "pid": "25",
+      "position": {
+        "x": "2300",
+        "y": "675"
+      }
+    },
+    {
+      "text": "When I was young, defining myself felt important, but now I see it differently.\n\nThe more I learn and broaden my knowledge and experiences, the more I realize how little I know about the world. That's why I prefer to be a curious being rather than obsessing over becoming an expert.\n\nIf possible, I wish to work with diverse people and subjects so I can continuously learn from them.",
+      "name": "I'm a blob",
+      "pid": "26",
+      "position": {
+        "x": "1550",
+        "y": "1000"
+      }
+    },
+    {
+      "text": "I started learn to code compute shader in unity\n<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop><source srt='/media/agent_04.mp4'></video>\nThat time, I really felt that I need to revisit basic math😓\n\nLater on, I began using THREE.js for [[The Perspective project]] and seized the opportunity to delve into GLSL. This experience made me recognize the powerful capabilities of shader coding.\n\nThis is GLSL I created with my drawing.\n<video autoplay muted loop><source src='/media/sequence2.mp4'></video>\nThis developed the idea to create [[Museum of Perspectives->Mupp]]",
+      "links": [
+        {
+          "name": "The Perspective project",
+          "link": "The Perspective project",
+          "pid": "6"
+        },
+        {
+          "name": "Museum of Perspectives",
+          "link": "Mupp",
+          "pid": "14"
+        }
+      ],
+      "name": "Shader Coding",
+      "pid": "27",
+      "position": {
+        "x": "2275",
+        "y": "1050"
+      }
+    },
+    {
+      "text": "[[<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>->Shader Coding]] [[<img src ='/media/rp (5).gif'>->P5.js]]\n",
+      "links": [
+        {
+          "name": "<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>",
+          "link": "Shader Coding",
+          "pid": "27"
+        },
+        {
+          "name": "<img src ='/media/rp (5).gif'>",
+          "link": "P5.js",
+          "pid": "29"
+        }
+      ],
+      "name": "Generative Art*",
+      "pid": "28",
+      "position": {
+        "x": "2225",
+        "y": "875"
+      }
+    },
+    {
+      "text": "<img src ='/media/rp (1).gif'><img src ='/media/rp (2).gif'><img src ='/media/rp (3).gif'><img src ='/media/rp (4).gif'><img src ='/media/rp (5).gif'>\n\nThe \"Resolution Party\" is a small project I developed for the end of the year. The initial concept was to host a virtual party where nobody had to fully commit, and everyone's character could dance through the endless night. It's a metaverse joke project, perfect for introverts.\n\nIt's created with P5.js and Firebase. \n\nThere was a recorded video somewhere.. still searching for it🔍",
+      "name": "P5.js",
+      "pid": "29",
+      "position": {
+        "x": "2150",
+        "y": "1075"
+      }
+    }
+  ],
+  "name": "Hello",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.8.0",
+  "ifid": "A0FCE7C7-A0A4-40FA-BF56-6AD78497434E"
+}
