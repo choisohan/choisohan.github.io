@@ -32,12 +32,12 @@
       "name": "Hello*",
       "pid": "1",
       "position": {
-        "x": "1650",
-        "y": "550"
+        "x": "1375",
+        "y": "575"
       }
     },
     {
-      "text": "<img src='/media/sunset.gif'><img src='/media/sunset-msg.gif'><img src='/media/timeshift.gif'>\n\nSunset Avenue is a web application project initiated in mid-2023. The concept revolves around crafting an image box integrated with Google Calendar, allowing the display to evolve over time.\n\nPersonally, the idea is inspired by the daily challenges of communication with my overseas family. It also stems from my longstanding quest to strike a delicate balance between digital and classical art.\n\nThe project is developed in Node.Js, React, Express, MongoDB, Socket.io\n\n[[What did you learn from this project?->learned from sunset]]\n[[What other web project did you work on?->Web Projects*]]",
+      "text": "<img src='/media/sunset.gif'><img src='/media/sunset-msg.gif'><img src='/media/timeshift.gif'>\n\n<a href='sunsetave.io'>Sunset Avenue</a> is a web application project initiated in mid-2023. The concept revolves around crafting an image box integrated with Google Calendar, allowing the display to evolve over time.\n\nPersonally, the idea is inspired by the daily challenges of communication with my overseas family. It also stems from my longstanding quest to strike a delicate balance between digital and classical art.\n\nThe project is developed in Node.Js, React, Express, MongoDB, Socket.io\n\n[[What did you learn from this project?->learned from sunset]]\n[[What other web project did you work on?->Web Projects*]]",
       "links": [
         {
           "name": "What did you learn from this project?",
@@ -118,7 +118,7 @@
       "name": "The Perspective project",
       "pid": "6",
       "position": {
-        "x": "2450",
+        "x": "2400",
         "y": "900"
       }
     },
@@ -155,7 +155,14 @@
       }
     },
     {
-      "text": "<img src='/media/twine-screenshot.png'>\n\nConversation is designed with Twine and React.\nYou can clone <a href='https://github.com/choisohan/choisohan.github.io' target='_blank'> the repo </a> and modify as your own.",
+      "text": "<img src='/media/twine-screenshot.png'>\n\nConversation is designed with Twine and React.\nYou can clone <a href='https://github.com/choisohan/choisohan.github.io' target='_blank'> the repo </a> and modify as your own\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
       "name": "Making this site?",
       "pid": "9",
       "position": {
@@ -191,8 +198,8 @@
       "name": "That Timeline",
       "pid": "11",
       "position": {
-        "x": "2100",
-        "y": "800"
+        "x": "2050",
+        "y": "775"
       }
     },
     {
@@ -294,8 +301,8 @@
       "name": "Mupp",
       "pid": "14",
       "position": {
-        "x": "2550",
-        "y": "1100"
+        "x": "2700",
+        "y": "950"
       }
     },
     {
@@ -415,7 +422,14 @@
       }
     },
     {
-      "text": "<video control control><source src='/media/minjeong shin vfx reel 2017.mp4'></video>",
+      "text": "<video control control><source src='/media/minjeong shin vfx reel 2017.mp4'></video>\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
       "name": "2017 VFX modeling reel",
       "pid": "21",
       "position": {
@@ -461,7 +475,14 @@
       }
     },
     {
-      "text": "<video muted autoplay loop><source src='/media/ar_turtle.mp4'></video>\n<video muted autoplay loop><source src='/media/ar_jump.mp4'></video>\nFun little project with Spark AR",
+      "text": "<video muted autoplay loop><source src='/media/ar_turtle.mp4'></video>\n<video muted autoplay loop><source src='/media/ar_jump.mp4'></video>\nFun little project with Spark AR\nI have more but still looking for the videos I recorded.\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
       "name": "AR Projects",
       "pid": "24",
       "position": {
@@ -501,11 +522,18 @@
       }
     },
     {
-      "text": "When I was young, defining myself felt important, but now I see it differently.\n\nThe more I learn and broaden my knowledge and experiences, the more I realize how little I know about the world. That's why I prefer to be a curious being rather than obsessing over becoming an expert.\n\nIf possible, I wish to work with diverse people and subjects so I can continuously learn from them.",
+      "text": "When I was young, defining myself felt important, but now I see it differently.\n\nThe more I learn and broaden my knowledge and experiences, the more I realize how little I know about the world. That's why I prefer to be a curious being rather than obsessing over becoming an expert.\n\nIf possible, I wish to work with diverse people and subjects so I can continuously learn from them.\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
       "name": "I'm a blob",
       "pid": "26",
       "position": {
-        "x": "1550",
+        "x": "1575",
         "y": "1000"
       }
     },
@@ -531,7 +559,7 @@
       }
     },
     {
-      "text": "[[<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>->Shader Coding]] [[<img src ='/media/rp (5).gif'>->P5.js]]\n",
+      "text": "[[<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>->Shader Coding]] [[<img src ='/media/rp (5).png'>->P5.js]]\n",
       "links": [
         {
           "name": "<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>",
@@ -539,7 +567,7 @@
           "pid": "27"
         },
         {
-          "name": "<img src ='/media/rp (5).gif'>",
+          "name": "<img src ='/media/rp (5).png'>",
           "link": "P5.js",
           "pid": "29"
         }
@@ -552,12 +580,19 @@
       }
     },
     {
-      "text": "<img src ='/media/rp (1).gif'><img src ='/media/rp (2).gif'><img src ='/media/rp (3).gif'><img src ='/media/rp (4).gif'><img src ='/media/rp (5).gif'>\n\nThe \"Resolution Party\" is a small project I developed for the end of the year. The initial concept was to host a virtual party where nobody had to fully commit, and everyone's character could dance through the endless night. It's a metaverse joke project, perfect for introverts.\n\nIt's created with P5.js and Firebase. \n\nThere was a recorded video somewhere.. still searching for it🔍",
+      "text": "<img src ='/media/rp (1).png'><img src ='/media/rp (2).png'><img src ='/media/rp (3).png'><img src ='/media/rp (4).png'><img src ='/media/rp (5).png'>\n\nThe \"Resolution Party\" is a small project I developed for the end of the year. The initial concept was to host a virtual party where nobody had to fully commit, and everyone's character could dance through the endless night. It's a metaverse joke project, perfect for introverts.\n\nIt's created with P5.js and Firebase. \n\nThere was a recorded video somewhere.. still searching for it🔍\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
       "name": "P5.js",
       "pid": "29",
       "position": {
-        "x": "2150",
-        "y": "1075"
+        "x": "2125",
+        "y": "1050"
       }
     }
   ],
