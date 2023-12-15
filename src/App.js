@@ -1,59 +1,157 @@
-import './css/Style.css'
-import Menu from './components/Menu';
-import { useEffect, useState } from 'react';
-import PageList from './PageList';
+import './css/Style.scss'
+import { useHistory, useUpdateHistory  } from './Contexts/ConversationContext';
+import { useState, useEffect , useRef } from 'react';
+import Popup from './components/Popup';
+import { useUpdatePopupContent } from './Contexts/PopupContext';
 
 
+const App =  ()=> {
 
-function App() {
+    const history = useHistory();
+    const addHistory = useUpdateHistory(); 
+    const [twineJson,setTwineJson] = useState();
+    const twineJsonRef = useRef();
+    const updatePopup = useUpdatePopupContent();
 
-  const [pIndex, setPIndex] = useState(0);
-  const [pages, setPages] = useState(document.querySelectorAll('.page'))
-  const [ trigger , setTrigger] = useState();
 
+    const LineComponent = ( text,links )=>{
+      const pattern =  /(\[\[.*?]])/g;
 
-  useEffect(()=>{
-    setPages( document.querySelectorAll('.page') ); 
-  },[])
+      var sections =  text.split(pattern).filter(j=>j).map( (section) =>{
+        
+          var match;
+          links.forEach( link =>{
+            var linkMatch = section.match(new RegExp(`\\[\\[([^\\]]*${link.name}[^\\]]*)\\]\\]`));
+            if(linkMatch){match = link;}
+          })
 
-  useEffect(()=>{
+          if(match){
+            return <button pid={match.pid ? match.pid: null } key={section} label={match.link}
+                dangerouslySetInnerHTML={{__html:match.name}}
+                onClick={()=>{
+                  if(match.pid && match.pid in twineJsonRef.current.passages){
+                      addHistory(match.pid);
+                  }
+                }}/>
+          }else{
+            return <span key={section} dangerouslySetInnerHTML={{__html:section}}/>
+          }
+      });
 
-    if(pages){
+      return [...sections, <p />]
+    }  
+  
+    const SortTwine= (twineJson)=>{
+        var pArr = twineJson.passages; 
+        var obj = {};
+        pArr.forEach(passage => {
+            var lines = passage.text.split('\n')
+            var links = passage.links || [] ;
+            lines.forEach( (line, i) =>{
+                lines[i] = LineComponent(line,links,0) 
+            })
+            obj[passage.pid] =lines;
+        });
 
-        const bBoxes =Array.from( document.querySelectorAll('.page'))
-        .map(p=> p.getBoundingClientRect() )
-        .map(b=>({top:Math.floor( b.top), bottom: Math.floor(b.bottom) })); 
+        var pathes = pArr.filter(p=>p.name.includes('*')).map(p=>( { name: p.name.replace('*','...'), pid: p.pid } ))
+        return { passages: obj , pathes:  pathes };
+    }
 
-      window.addEventListener('wheel',e=>{    
-        var found = bBoxes
-                      .filter(b => b.bottom <= window.innerHeight + window.scrollY )
-                      .filter( b => b.top >= window.scrollY- window.innerHeight+10)[0]
+    useEffect(()=>{
+      var lastPassage = document.querySelectorAll('.passage')
+      if(lastPassage.length > 0 ){
+        lastPassage = lastPassage[lastPassage.length-1]; 
+        lastPassage.scrollIntoView();
+      }
+    },[history])
 
-        if(found){
-          var foundIndex = bBoxes.indexOf(found);
-          setPIndex(foundIndex); 
+    useEffect(()=>{
+      window.addEventListener('mousedown',e=>{
+        if(e.target.nodeName == 'IMG' && e.target.parentNode.nodeName != 'BUTTON' ){
+          updatePopup(<img src={e.target.src} />);
         }
       })
-    }
-  },[pages])
-
-  useEffect(()=>{
-    if(pages[pIndex] ){
-      pages[pIndex].scrollIntoView();
-    }
-  },[pIndex])
+    },[])
 
 
-  return (<>
-  <div className="App" id='body-root' >
-      <Menu texts={PageList.map(p=>p.text)} onMouseEnter={setPIndex} pIndex={pIndex} /> 
-      {PageList.map((p, i) =>
-          <div className={`page`} key={i}> {p.component} </div>)}
-  </div>
+    useEffect(()=>{
+      fetch('/json/Hello.json')
+          .then( async res=> await res.json() )
+          .then( json =>{
+            var sorted = SortTwine(json)
+              setTwineJson(sorted) ;
+              twineJsonRef.current = sorted
+                var _history = localStorage.getItem('history');
+                _history = _history ?  JSON.parse(_history) : []; 
+                var url = window.location.pathname.replace('/','');
+                if(url.length<1){_history.push('1')}
+                else{_history.push(url)}
+                addHistory(_history )
 
+          }) 
+    },[])
+
+if(twineJson){
+  return <>
+  <div id='passages'>
+  {history.map((pid, pidx) =>
+{
+if(pidx < history.length -1 ){
+
+return <div key={pidx} className='passage'>{
+  
+  twineJson.passages[pid].map( sections => 
+    sections.map( span =>{
+      if( span.props.pid ){ //&& span.props.pid !=history[pidx+1] ){
+        return null; 
+      }else{
+        return span ;
+      }
+    })
+  )
+
+}</div>
+}else{
+//last
+return <div key={pidx} className='passage'>
+   <button id='prev-button' onClick={()=>{addHistory(-1)}}>Back</button><p />
+  {twineJson.passages[pid]}
+    </div>
+  }
+})}
+</div>
+
+
+<div className='footer'>
+
+    <button onClick={()=>{
+        localStorage.removeItem('history');
+        window.location.pathname='/'
+      }}>Clear History</button>
+
+    <button id='sitemap-button' onClick={e=>{
+      var tg = e.target.parentNode.querySelector('#sitemap')
+      if(!tg.className.includes('show')){
+        tg.className = 'show'
+      }else{
+        tg.className = '' 
+      }
+    }}>Site Map</button>
+
+    <span id='sitemap' className=''>
+      { twineJson.pathes.map(path=>
+          <button onClick={()=>{addHistory(path.pid);}}>
+            {path.name}</button>) }
+    </span>
+    
+
+</div>
+
+<Popup />
   </>
-
-  );
 }
+
+}
+
 
 export default App;

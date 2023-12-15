@@ -1,0 +1,292 @@
+@import url(Grid.css);
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+a{
+  margin: 0px 10px 0px 10px;
+  color:blue;
+  text-decoration: none;
+}
+:root{
+  --hoverColor: rgb(29, 63, 255); 
+  --lightgray:rgb(245, 245, 245);
+  
+}
+button{
+  scale: .8;
+  transition: all .2s ;
+}
+button:hover{
+  text-decoration: black wavy underline;
+  color: var(--hoverColor);
+  scale:1;
+
+  
+}
+
+
+#root{
+  padding: 20px;
+  font-size: 21px;
+  line-height: 150%;
+  min-height: 100vh;
+  display: grid;
+  word-spacing: 4px;
+  letter-spacing: .2px;
+  place-items:center; 
+  >*:first-child{
+    padding-top:100px;
+
+  }
+}
+
+.scale{
+  scale: .8;
+  transition:all .2s 
+}
+.scale:hover{
+  scale:1;
+}
+.footer{
+  place-self: center; 
+  place-content:center; 
+
+  align-self:self-end; 
+  margin-top:100px ;
+  display: flex;
+  gap:10px; 
+  flex-wrap: wrap;
+  font-size: 70%;
+  text-align-last: center; 
+  #sitemap{
+    display: flex;
+    flex-direction: column;
+    width: 0%;
+    overflow: hidden;
+    gap: 5px;
+    align-items: center; 
+
+    button{
+      background-color: var(--lightgray);
+      border-radius: 5px;
+      width: fit-content;
+      padding: 5px;
+    }
+  }
+  #sitemap.show{
+    width: 100%;
+  }
+}
+
+button{
+  background-color: transparent;
+  border:none;
+  font-size: 100%;
+  cursor:pointer;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+
+
+/* */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #dedede; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8; 
+  }
+
+  .scale0{
+    scale: 0; 
+  }
+  .selecions{
+    display: flex;
+    flex-wrap: wrap;
+    place-content:center;
+    margin-top: 20px;
+  }
+
+  *[label]::after{
+    position:absolute;
+    content:attr(label);
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 60%;
+    transform: translateY(100%);
+    width:max-content;
+    max-width: 200px;
+    z-index: 2;
+    bottom:0px;
+    left:50%;
+    display: none;
+  }
+  *[label]:hover::after{
+    display: inherit  }
+
+
+.fixed{
+  position: fixed;
+}
+.top{
+  top:0px;
+}
+.bottom{
+  bottom:0px;
+}
+.left{
+  left: 0px;
+}
+.right{
+  right:0px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.passage{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  justify-self: center;
+  height: fit-content;
+  place-items: center; 
+
+  >span{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img,video{
+    max-width: 90%;
+    max-height: 500px;
+    scale: .8;
+    transition: .2s all;
+    cursor:pointer;
+    min-width: 25%;
+    height: max-content;
+    flex:1;
+  }
+  img:hover, video:hover{
+    scale:1;
+  }
+
+  
+  button {
+    transition:all .2s;
+    height:fit-content;
+    //flex:10;
+    background-color: var(--lightgray);
+    border-radius: 5px;
+    padding: 5px; 
+  //  flex-grow: 2;
+  }
+
+  p{
+    width: 100%;
+    height:10px;
+    flex: none;
+  }
+
+  button:hover{
+    z-index: 10 !important;
+    background-color: rgb(245, 245, 245);
+  }
+
+  button:has(img), button:has(video){
+    background-color: transparent !important ;
+    border-radius:  0px;
+    padding: 0px; 
+    min-width: 250px;
+    flex:1;
+    flex-grow: 1;
+    max-width: initial; 
+    video,img{
+      scale: 1 !important;
+      max-width: 500px;
+      width: 100%;
+      width: 100%;
+    }
+  }
+
+}
+
+#passages > *:last-child{
+  //background-color: pink;
+  > *{
+    opacity: 0;
+    animation: fadeIn 0.25s ease-in-out forwards;
+  }
+
+  @for $i from 2 through 100 {
+    > *:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.25}s;
+    }
+  }
+}
+
+.passage:first-child{
+  #prev-button{display: none;}
+}
+
+
+.popup{
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top:0px;
+  left:0px;
+  align-items: center; 
+  place-content: center;
+  display: flex;
+  background-color: rgba(168, 168, 168, 0.342);
+
+
+  .container{
+    background-color: white;
+    border-radius: 5px;
+    max-width: 80vw;
+    max-height: 80vh;
+    padding: 5px; 
+    min-width: 300px;
+    min-height: 300px;
+    *{
+      max-width: inherit;
+      max-height: inherit; 
+    }
+  }
+
+}
+
+#prev-button{
+  margin-top:50px;
+}

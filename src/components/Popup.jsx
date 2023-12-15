@@ -1,31 +1,29 @@
 import React, { useEffect, useRef , Component, useState } from 'react'
 import '../css/Popup.css'
+import { usePopupContent, useUpdatePopupContent } from '../Contexts/PopupContext';
 
 
+const Popup = () => {
 
-const Popup = props => {
     const popupRef = useRef(); 
+    const content = usePopupContent(); 
+    const updateContent = useUpdatePopupContent(); 
 
     const onScreenClicked = e =>{
         if(e.target == popupRef.current){
-            props.setTrigger(null);
-
+            updateContent(null);
         }
     }
+
     useEffect(()=>{
-        console.log( props.trigger )
-    },[props.trigger])
+        console.log( content )
+    },[content])
 
-  return <>
-  {
-    !props.trigger ? null :
-    <ul ref={popupRef} onClick={onScreenClicked} className={`popup screen `} >
-        <ul className='container'>
-            {props.children}
-        </ul>
-    </ul>
-  }
-
-  </>
+    if(content){
+        return <div ref={popupRef} onClick={onScreenClicked} className={`popup screen `} >
+        <div className='container'> {content}
+        </div>
+    </div>
+    }
 }
 export default Popup
