@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "Hello. This is Min.👋\nWant to chat with me?\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
+      "text": "Hello. 👋 You are in Choisohan's Page and this is Min.\nWhat do you want to chat with me?\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
       "links": [
         {
           "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ",
@@ -21,12 +21,12 @@
         {
           "name": "<img src ='/media/that timeline.png' >",
           "link": "Web Projects*",
-          "pid": "19"
+          "pid": "18"
         },
         {
           "name": "Wait..Who are you?",
           "link": "Who are you?",
-          "pid": "12"
+          "pid": "11"
         }
       ],
       "name": "Hello*",
@@ -37,7 +37,7 @@
       }
     },
     {
-      "text": "<img src='/media/sunset.gif'><img src='/media/sunset-msg.gif'><img src='/media/timeshift.gif'>\n\n<a href='sunsetave.io'>Sunset Avenue</a> is a web application project initiated in mid-2023. The concept revolves around crafting an image box integrated with Google Calendar, allowing the display to evolve over time.\n\nPersonally, the idea is inspired by the daily challenges of communication with my overseas family. It also stems from my longstanding quest to strike a delicate balance between digital and classical art.\n\nThe project is developed in Node.Js, React, Express, MongoDB, Socket.io\n\n[[What did you learn from this project?->learned from sunset]]\n[[What other web project did you work on?->Web Projects*]]",
+      "text": "<img src='/media/sunset.gif'><img src='/media/sunset-msg.gif'><img src='/media/timeshift.gif'>\n\n<a href='https://sunsetave.io'>Sunset Avenue</a> is a web application project initiated in mid-2023. The concept revolves around crafting an image box integrated with Google Calendar, allowing the display to evolve over time.\n\nPersonally, the idea is inspired by the daily challenges of communication with my overseas family. It also stems from my longstanding quest to strike a delicate balance between digital and classical art.\n\nThe project is developed in Node.Js, React, Express, MongoDB, Socket.io\n\n[[What did you learn from this project?->learned from sunset]]\n[[What other web project did you work on?->Web Projects*]]",
       "links": [
         {
           "name": "What did you learn from this project?",
@@ -47,14 +47,14 @@
         {
           "name": "What other web project did you work on?",
           "link": "Web Projects*",
-          "pid": "19"
+          "pid": "18"
         }
       ],
       "name": "Sunset Ave",
       "pid": "2",
       "position": {
-        "x": "1925",
-        "y": "775"
+        "x": "1850",
+        "y": "800"
       }
     },
     {
@@ -63,7 +63,7 @@
       "pid": "3",
       "position": {
         "x": "2000",
-        "y": "1000"
+        "y": "1025"
       }
     },
     {
@@ -72,33 +72,43 @@
       "pid": "4",
       "position": {
         "x": "1750",
-        "y": "725"
+        "y": "575"
       }
     },
     {
-      "text": "This is Bobo the Orangutan.\nThe project I started many years ago as Interactive Artwork\nBobo can see you from webcam and follow your expression and play with you.\n\n<video autoplay muted loop><source src='/media/bobo3.mp4'></video>\n\nI worked from modeling, texturing, rigging, animation, build the interaction with Computer Vision.\n<img src ='/media/bobo4.png'>\n<img src='/media/bobo5.jpg'>\n\n\nIf you like this, check out [[Beluga Project]] as well. \n\n[[What is the status of Bobo Project?->Why Stopped?]]\n[[Show me other interactive projects!->Interactive Artwork*]] ",
+      "text": "This is Bobo the Orangutan.\nThe project I started many years ago as Interactive Artwork\nBobo can see you from webcam and follow your expression and play with you.\n\n<video autoplay muted loop><source src='/media/bobosMonitor.mp4'></video>\n\nI worked from modeling, texturing, rigging, animation, build the interaction with Computer Vision.\n\n[[How did you start working on Bobo?->starting bobo]]\n[[What did you learn by Bobo->planing bobo]]\n[[How did you make Bobo's face->bobo's face]]\n[[How did ou make Bobo interactive->interaction with bobo]]\n[[Show me other interactive projects!->Interactive Artwork*]] ",
       "links": [
         {
-          "name": "Beluga Project",
-          "link": "Beluga Project",
-          "pid": "17"
+          "name": "How did you start working on Bobo?",
+          "link": "starting bobo",
+          "pid": "30"
         },
         {
-          "name": "What is the status of Bobo Project?",
-          "link": "Why Stopped?",
-          "pid": "18"
+          "name": "What did you learn by Bobo",
+          "link": "planing bobo",
+          "pid": "31"
+        },
+        {
+          "name": "How did you make Bobo's face",
+          "link": "bobo's face",
+          "pid": "34"
+        },
+        {
+          "name": "How did ou make Bobo interactive",
+          "link": "interaction with bobo",
+          "pid": "35"
         },
         {
           "name": "Show me other interactive projects!",
           "link": "Interactive Artwork*",
-          "pid": "25"
+          "pid": "24"
         }
       ],
       "name": "Bobo",
       "pid": "5",
       "position": {
-        "x": "2600",
-        "y": "600"
+        "x": "2175",
+        "y": "175"
       }
     },
     {
@@ -107,12 +117,12 @@
         {
           "name": "Beautiful Idea! How can I try?",
           "link": "Try Perspectives",
-          "pid": "20"
+          "pid": "19"
         },
         {
           "name": "What other web project did you work on?",
           "link": "Web Projects*",
-          "pid": "19"
+          "pid": "18"
         }
       ],
       "name": "The Perspective project",
@@ -123,35 +133,19 @@
       }
     },
     {
-      "text": "... Opting for a grid view is the conventional choice for an artist's portfolio. However, for some reason, it just doesn't align with my purpose.\n\nI believe people anticipate different things from me. Some appreciate my works focused on digital art, while others enjoy my interactive projects in game engines. Some are drawn to my coding projects, and personally, I find sharing my thoughts to be the most rewarding.\n\nIn the end, I realized I can't mold myself to fit everyone's expectations, so I decided to embrace it. I created a system where people can customize their page based on their preferences. The page is saved in local browser storage, ensuring that everyone can view my portfolio in their own unique way.\n\n[[How did you make this site?->Making this site?]]",
+      "text": "Some kind of experiment to show what kind of person I am, instead of my abilities.\nAbilities are boring but I am not boring.(I think)\n\n[[How did you make this site?->Making this site?]]",
       "links": [
         {
           "name": "How did you make this site?",
           "link": "Making this site?",
-          "pid": "9"
+          "pid": "8"
         }
       ],
-      "name": "This Site",
+      "name": "About This Site**",
       "pid": "7",
       "position": {
-        "x": "1700",
-        "y": "1000"
-      }
-    },
-    {
-      "text": "Thank you for saying that❤️‍🔥\n\n[[Back to main->Hello*]]",
-      "links": [
-        {
-          "name": "Back to main",
-          "link": "Hello*",
-          "pid": "1"
-        }
-      ],
-      "name": "Keep going!",
-      "pid": "8",
-      "position": {
-        "x": "2900",
-        "y": "900"
+        "x": "1750",
+        "y": "1200"
       }
     },
     {
@@ -164,26 +158,31 @@
         }
       ],
       "name": "Making this site?",
-      "pid": "9",
+      "pid": "8",
       "position": {
-        "x": "1750",
-        "y": "1175"
+        "x": "1650",
+        "y": "1425"
       }
     },
     {
-      "text": "I have but rarely update.\nThere are two main reasons.\n\n1. Video compression is horrible there.\n2. It makes me less productive\n\nI particularly sensed that social media platforms were pushing me towards obsessively posting rather than focusing on improving the quality of my work. I acknowledge that it's not entirely negative, but I am aware of my tendencies. As a result, I've chosen to maintain some distance from social media, even though I miss the productive interactions it offers at times.\n\nIf you like talk, [[contact->contact*]] me directly.",
+      "text": "You might find it but I rarely update. There must be a positive benefits but I concluded I can't focus on where I am and what I'm doing. I think I am too simple person to be connected all the time.\n\nI tend to write something longer tho, if you want to check out. [[writing?->My Writings]]\n\nor to chat, you can [[contact->contact*]] me directly.",
       "links": [
+        {
+          "name": "writing?",
+          "link": "My Writings",
+          "pid": "29"
+        },
         {
           "name": "contact",
           "link": "contact*",
-          "pid": "15"
+          "pid": "14"
         }
       ],
       "name": "SNS?",
-      "pid": "10",
+      "pid": "9",
       "position": {
-        "x": "1425",
-        "y": "1000"
+        "x": "1325",
+        "y": "1125"
       }
     },
     {
@@ -192,60 +191,55 @@
         {
           "name": "What other web project did you work on?",
           "link": "Web Projects*",
-          "pid": "19"
+          "pid": "18"
         }
       ],
       "name": "That Timeline",
-      "pid": "11",
+      "pid": "10",
       "position": {
         "x": "2050",
         "y": "775"
       }
     },
     {
-      "text": "If you ask \"what I can\", I trained myself as an artist.\nI can paint, sculpt as natural.\n\n<img src ='/media/painting_chimp.jpg' <img src ='/media/paint_fruits.jpg'> [[show me more of your arts ->Drawings]] \n\nI've worked in various films and games, animations, application as a digital artist.\n[[Tell me about your professional experience.->Professional Experience]]\n\nIn the last few years, I discovered the beauty of programming, landed a full-time developer position. \n\nYet I'm not just my skills; I'm more like a blob of curiosity⭐.\n\n[[What do you mean by a blob of curiosity?->I'm a blob]]\n[[How are you doing thesedays?->Thesedays*]]\n[[What is this site?->This Site]]\n\n[[I have a question for you. How can I reach out to you?->contact*]]\n[[I like to see more of you work. Do you have SNS?->SNS?]] \n",
+      "text": "If you ask \"what I can\", I trained myself as an artist.\n\n<img src ='/media/painting_chimp.jpg' > <img src ='/media/paint_fruits.jpg'> [[show me more of your arts ->Drawings]] \n\nProfessionally I've worked in various films and games, animations, application as a digital artist and developer for many years.\n[[Tell me about your professional experience.->Professional Experience]]\n\nYet I'm not just my skills; I'm more like a blob of curiosity⭐[[What?->I'm a blob]]\n[[Seriously... Tell me what you can->All Skills]]\n\n[[How are you doing thesedays?->Thesedays*]]\n[[I like to see more of you work. Do you have SNS?->SNS?]] \n",
       "links": [
         {
           "name": "show me more of your arts ",
           "link": "Drawings",
-          "pid": "22"
+          "pid": "21"
         },
         {
           "name": "Tell me about your professional experience.",
           "link": "Professional Experience",
-          "pid": "16"
+          "pid": "15"
         },
         {
-          "name": "What do you mean by a blob of curiosity?",
+          "name": "What?",
           "link": "I'm a blob",
-          "pid": "26"
+          "pid": "25"
+        },
+        {
+          "name": "Seriously... Tell me what you can",
+          "link": "All Skills",
+          "pid": "36"
         },
         {
           "name": "How are you doing thesedays?",
           "link": "Thesedays*",
-          "pid": "13"
-        },
-        {
-          "name": "What is this site?",
-          "link": "This Site",
-          "pid": "7"
-        },
-        {
-          "name": "I have a question for you. How can I reach out to you?",
-          "link": "contact*",
-          "pid": "15"
+          "pid": "12"
         },
         {
           "name": "I like to see more of you work. Do you have SNS?",
           "link": "SNS?",
-          "pid": "10"
+          "pid": "9"
         }
       ],
       "name": "Who are you?",
-      "pid": "12",
+      "pid": "11",
       "position": {
         "x": "1550",
-        "y": "725"
+        "y": "700"
       }
     },
     {
@@ -254,7 +248,7 @@
         {
           "name": "Mupp",
           "link": "Mupp",
-          "pid": "14"
+          "pid": "13"
         },
         {
           "name": "Sunset Ave",
@@ -264,21 +258,21 @@
         {
           "name": "That Timeline",
           "link": "That Timeline",
-          "pid": "11"
+          "pid": "10"
         },
         {
           "name": "Lucky you! I have a job for you!",
           "link": "contact*",
-          "pid": "15"
+          "pid": "14"
         },
         {
           "name": "I have a question for you. How can I reach out to you?",
           "link": "contact*",
-          "pid": "15"
+          "pid": "14"
         }
       ],
       "name": "Thesedays*",
-      "pid": "13",
+      "pid": "12",
       "position": {
         "x": "1850",
         "y": "1025"
@@ -295,13 +289,13 @@
         {
           "name": "Beautiful Idea! How can I try?",
           "link": "Try Perspectives",
-          "pid": "20"
+          "pid": "19"
         }
       ],
       "name": "Mupp",
-      "pid": "14",
+      "pid": "13",
       "position": {
-        "x": "2700",
+        "x": "2600",
         "y": "950"
       }
     },
@@ -315,10 +309,10 @@
         }
       ],
       "name": "contact*",
-      "pid": "15",
+      "pid": "14",
       "position": {
-        "x": "1400",
-        "y": "1200"
+        "x": "1450",
+        "y": "1125"
       }
     },
     {
@@ -327,18 +321,18 @@
         {
           "name": "here it is.",
           "link": "2017 VFX modeling reel",
-          "pid": "21"
+          "pid": "20"
         }
       ],
       "name": "Professional Experience",
-      "pid": "16",
+      "pid": "15",
       "position": {
         "x": "2050",
         "y": "1200"
       }
     },
     {
-      "text": "<video autoplay control loop><source src='/media/unity_beluga.mp4' ></video>->\n\nBeluga is one of early interactive animal project. I strategically opted for a whale because 90% of the animation involves the spine, making it simpler than limb animations.\n\nA beluga detects a human position through the camera,\n<img src='/media/1027_motionDetect.gif'>\n\nand procedurally creates the motion per frame. \n<img src ='/media/1021_ai.gif'>\n\nThat time, I  loved Computer Vision so much. I wanted to connect everything with CV. 😂 ( it continued to [[Bobo]] )\n\n<img src = '/media/beluga_1.gif'>\n<img src='/media/whales.png'>\n\n[[Why did you stop Beluga Project?->Why Stopped?]]\n[[Show me more of the interactive Artworks->Interactive Artwork*]] ",
+      "text": "<video autoplay control loop><source src='/media/unity_beluga.mp4' ></video>->\n\nBeluga is one of early interactive animal project. I strategically opted for a whale because 90% of the animation involves the spine, making it simpler than limb animations.\n\nA beluga detects a human position through the camera,\n<img src='/media/1027_motionDetect.gif'>\n\nand procedurally creates the motion per frame. \n<img src ='/media/1021_ai.gif'>\n\nThat time, I  loved Computer Vision so much. I wanted to connect everything with CV. 😂 ( it continued to [[Bobo]] )\n\n<img src = '/media/beluga_1.gif'>\n<img src='/media/whales.png'>\n\n[[Why did you stop Beluga Project?->Bobo status]]\n[[Show me more of the interactive Artworks->Interactive Artwork*]] ",
       "links": [
         {
           "name": "Bobo",
@@ -347,36 +341,41 @@
         },
         {
           "name": "Why did you stop Beluga Project?",
-          "link": "Why Stopped?",
-          "pid": "18"
+          "link": "Bobo status",
+          "pid": "17"
         },
         {
           "name": "Show me more of the interactive Artworks",
           "link": "Interactive Artwork*",
-          "pid": "25"
+          "pid": "24"
         }
       ],
       "name": "Beluga Project",
-      "pid": "17",
+      "pid": "16",
       "position": {
-        "x": "2575",
-        "y": "850"
+        "x": "2500",
+        "y": "450"
       }
     },
     {
-      "text": "Time is limited, and I can only do so much in a given period. The longer a project goes on, the more I realize how little I actually know. In each endeavor, I strive for depth rather than surface-level results. This often means taking a step back, studying more, and delving into the intricacies of the work.\n\n[[I love what you do! Please don't give up!->Keep going!]] ",
+      "text": "This Project is still in progress therefore this post will keep being updated with more information and more demos. If you want to get noticed whenever I update this article, please sign up on mail subscription or follow me on social media.\n\nAlso I am funding all my projects by myself. Sometimes there was no progress for a while because of other tasks. If you can fund even a little bit so I can spend more time for this project, that would be so appreciated. You can use PayPal or buy me a coffee.\n\nAnother way to support my work is share this project with others. Or if you have any good ideas to contribute to this project , please contact me directly. Most specially I need young orangutan voice audio, if you have anybody who can help me, please let me know!\n\nLastly, don’t forget to support endangered species. These are the good places dedicate to save orangutans!\n\nredapes.org\norangutans.ca\n\n[[Back to Bobo Main->Bobo]]\n[[Show me other interactive projects!->Interactive Artwork*]] \n",
       "links": [
         {
-          "name": "I love what you do! Please don't give up!",
-          "link": "Keep going!",
-          "pid": "8"
+          "name": "Back to Bobo Main",
+          "link": "Bobo",
+          "pid": "5"
+        },
+        {
+          "name": "Show me other interactive projects!",
+          "link": "Interactive Artwork*",
+          "pid": "24"
         }
       ],
-      "name": "Why Stopped?",
-      "pid": "18",
+      "name": "Bobo status",
+      "pid": "17",
       "position": {
-        "x": "2775",
-        "y": "675"
+        "x": "2925",
+        "y": "300"
       }
     },
     {
@@ -390,7 +389,7 @@
         {
           "name": "<img src ='/media/that timeline.png' >",
           "link": "That Timeline",
-          "pid": "11"
+          "pid": "10"
         },
         {
           "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video>",
@@ -399,9 +398,9 @@
         }
       ],
       "name": "Web Projects*",
-      "pid": "19",
+      "pid": "18",
       "position": {
-        "x": "2100",
+        "x": "2075",
         "y": "600"
       }
     },
@@ -411,11 +410,11 @@
         {
           "name": "here",
           "link": "contact*",
-          "pid": "15"
+          "pid": "14"
         }
       ],
       "name": "Try Perspectives",
-      "pid": "20",
+      "pid": "19",
       "position": {
         "x": "2275",
         "y": "1200"
@@ -431,26 +430,26 @@
         }
       ],
       "name": "2017 VFX modeling reel",
-      "pid": "21",
+      "pid": "20",
       "position": {
         "x": "1900",
         "y": "1200"
       }
     },
     {
-      "text": "<img src='/media/sketch_gorillas.png'> <img src ='/media/paint_woman.jpg'> <img src ='/media/paint_fruits.jpg'><img src='/media/sketer.jpg'> <img src ='/media/sketch_tiger.jpg'> <img src ='/media/fishes.jpg'><img src ='/media/jungle.jpg'><img src='/media/chimpSitting.jpg'><img src='/media/chubbyCat.jpg'><img src='/media/paint_fruits.jpg'>\n\n[[Show me your sculptings now->Sculpts]]",
+      "text": "<img src='/media/sketch_gorillas.png'> <img src ='/media/paint_woman.jpg'> <img src ='/media/paint_fruits.jpg'><img src='/media/sketer.jpg'> <img src ='/media/sketch_tiger.jpg'> <img src ='/media/fishes.jpg'><img src ='/media/jungle.jpg'><img src='/media/chimpSitting.jpg'><img src='/media/chubbyCat.jpg'><img src='/media/paint_fruits.jpg'>\n\n<img src='/media/girl(snap).png'><img src='/media/swan.png'><img src='/media/kids.png'>\n\n[[Show me your sculptings now->Sculpts]]",
       "links": [
         {
           "name": "Show me your sculptings now",
           "link": "Sculpts",
-          "pid": "23"
+          "pid": "22"
         }
       ],
       "name": "Drawings",
-      "pid": "22",
+      "pid": "21",
       "position": {
-        "x": "1300",
-        "y": "850"
+        "x": "1450",
+        "y": "925"
       }
     },
     {
@@ -468,10 +467,10 @@
         }
       ],
       "name": "Sculpts",
-      "pid": "23",
+      "pid": "22",
       "position": {
-        "x": "1300",
-        "y": "1000"
+        "x": "1325",
+        "y": "875"
       }
     },
     {
@@ -484,7 +483,7 @@
         }
       ],
       "name": "AR Projects",
-      "pid": "24",
+      "pid": "23",
       "position": {
         "x": "2450",
         "y": "1100"
@@ -501,7 +500,7 @@
         {
           "name": "AR Projects",
           "link": "AR Projects",
-          "pid": "24"
+          "pid": "23"
         },
         {
           "name": "Web GL Project",
@@ -511,18 +510,18 @@
         {
           "name": "Generative Art",
           "link": "Generative Art*",
-          "pid": "28"
+          "pid": "27"
         }
       ],
       "name": "Interactive Artwork*",
-      "pid": "25",
+      "pid": "24",
       "position": {
-        "x": "2300",
-        "y": "675"
+        "x": "2225",
+        "y": "600"
       }
     },
     {
-      "text": "When I was young, defining myself felt important, but now I see it differently.\n\nThe more I learn and broaden my knowledge and experiences, the more I realize how little I know about the world. That's why I prefer to be a curious being rather than obsessing over becoming an expert.\n\nIf possible, I wish to work with diverse people and subjects so I can continuously learn from them.\n\n[[Back to main->Hello*]]",
+      "text": "The more I learn and broaden my knowledge and experiences, the more I realize how little I know about the world. Bing proud of skills and knowleges is so fruitless.....\n\nIf possible, I wish to work with diverse people and subjects so I can continuously learn from them.\n\n[[Back to main->Hello*]]",
       "links": [
         {
           "name": "Back to main",
@@ -531,10 +530,10 @@
         }
       ],
       "name": "I'm a blob",
-      "pid": "26",
+      "pid": "25",
       "position": {
-        "x": "1575",
-        "y": "1000"
+        "x": "1625",
+        "y": "950"
       }
     },
     {
@@ -548,11 +547,11 @@
         {
           "name": "Museum of Perspectives",
           "link": "Mupp",
-          "pid": "14"
+          "pid": "13"
         }
       ],
       "name": "Shader Coding",
-      "pid": "27",
+      "pid": "26",
       "position": {
         "x": "2275",
         "y": "1050"
@@ -564,16 +563,16 @@
         {
           "name": "<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>",
           "link": "Shader Coding",
-          "pid": "27"
+          "pid": "26"
         },
         {
           "name": "<img src ='/media/rp (5).png'>",
           "link": "P5.js",
-          "pid": "29"
+          "pid": "28"
         }
       ],
       "name": "Generative Art*",
-      "pid": "28",
+      "pid": "27",
       "position": {
         "x": "2225",
         "y": "875"
@@ -589,15 +588,196 @@
         }
       ],
       "name": "P5.js",
-      "pid": "29",
+      "pid": "28",
       "position": {
         "x": "2125",
         "y": "1050"
       }
+    },
+    {
+      "text": "I sometimes like writing. Not super often but sometimes I publish online.\n\n- [Making of Bobo](https://happpinggarden.netlify.app/story-of-bobo)\n- [Working alone is so exhausting so I created my own assistant  :  2022](https://dev.to/happping_min/working-alone-is-so-exhausting-so-i-created-my-own-assistant-4mki)\n- [Dreaming Harmony: Art and AI : 2024](https://choisohan.medium.com/dreaming-about-harmony-art-and-ai-999da2ef2cf6)\n\n\nand there are more but I am currently collecting them yet.",
+      "name": "My Writings",
+      "pid": "29",
+      "position": {
+        "x": "1325",
+        "y": "1250"
+      }
+    },
+    {
+      "text": "<img src='/media/plateofapes.png'>\nBack when I was working on the film the Planet of the Apes, my task was watching an infinite amount of ape face references and sculpting each facial expression. Whilst I loved all the different apes, my favourites were the baby orangutans. They have these big round eyes and a mouth and nose with lots of squash and stretch Whenever they change their expression their face deforms very dramatically, they look just like jello. I couldn’t love them more. Even since I left NZ, this joy was in the back of my heart and waiting for a project idea to connect with.\n\n<img src ='/media/bobo idea.png'>\nFast foward to an ordinary weekend in 2020, me and my fiancé Tom did a skype chat with his family living in the UK and his baby neice Ella as well. She was too young so couldn’t talk on the screen but she seemed very interested to look at us and make some gestures and different facial expressions. Whenever we did something she reacted. When she was excited, we felt excited as well. I realized, communicating doesn’t necessarily require advanced language, and the Bobo project idea came up to me.\n\n[[What did you learn by Bobo->planing bobo]]\n[[How did you make Bobo's face->bobo's face]]\n[[How did ou make Bobo interactive->interaction with bobo]]",
+      "links": [
+        {
+          "name": "What did you learn by Bobo",
+          "link": "planing bobo",
+          "pid": "31"
+        },
+        {
+          "name": "How did you make Bobo's face",
+          "link": "bobo's face",
+          "pid": "34"
+        },
+        {
+          "name": "How did ou make Bobo interactive",
+          "link": "interaction with bobo",
+          "pid": "35"
+        }
+      ],
+      "name": "starting bobo",
+      "pid": "30",
+      "position": {
+        "x": "2425",
+        "y": "0"
+      }
+    },
+    {
+      "text": "<img src='/media/boboIdle.gif'>\nEven after I made up my mind, It was not clear if this project would be successful. Would this be fun for people? Could I even make this? I had thousands of worries in my head. I had to start figuring it out. What I usually do is some sort of sprint through the project- I go through every step in the minimum time possible. The goal for this stage is not perfection but instead to learn which mistakes to avoid and find the loopholes I didn’t consider. Ultimately this is to assess if this project is achievable. For example, here are a few modelling notes I collected during this time.\n\n- Even though the neck looks very short, the range of mobility is still quite big. Make sure the neck has enough edge loops and UVs.\n- Orangutans lift their arms very frequently and it even looks like they feel more comfortable with that posture. The range of the shoulder is very important. Check out the shoulder joint’s position.\n- Hips should be very flexible to spread wide\n- Feet should be available to make a fist\n\nIn order to make an orangutan, learning about them was crucial. I tried to collect as many references as possible such as books, articles, videos and images. However, it was hard. The number of resources for information about wild orangutans are few compared to chimpanzees. \n\n[[Tell me about physical difference of orangutan->study about apes]]\n[[Tell me about what you learn about orangutan's mind->study about apes mind]]\n[[How did ou make Bobo interactive->interaction with bobo]]",
+      "links": [
+        {
+          "name": "Tell me about physical difference of orangutan",
+          "link": "study about apes",
+          "pid": "32"
+        },
+        {
+          "name": "Tell me about what you learn about orangutan's mind",
+          "link": "study about apes mind",
+          "pid": "33"
+        },
+        {
+          "name": "How did ou make Bobo interactive",
+          "link": "interaction with bobo",
+          "pid": "35"
+        }
+      ],
+      "name": "planing bobo",
+      "pid": "31",
+      "position": {
+        "x": "2350",
+        "y": "150"
+      }
+    },
+    {
+      "text": "<img src ='/media/apes.jpg'>\n\nHow different they are?\nAt the beginning of the project I also didn’t realize how different orangutans and chimpanzees are.\n\nFirst of all, Chimpanzees live in Africa, and Orangutans live in Asia. Chimps tend to live on the ground but are also good climbers, where Orangutans spend nearly all of their time in the trees. Also, whilst chimps live as a group, orangutans mostly stay alone.\n\nLook at where the thumbs are. chimp- orangutan - siamang. Is this because they are good at climbing trees?\n\nOrangutan’s tree-dwelling lifestyle also gives another hint about them. They are very vulnerable on the ground. Looking at their feet standing on the ground makes me cry for tears because they look so uncomfortable. The toes are too long and their ankle is oriented strangely. This explains why all orangutans on the ground are rolling all the time.\n\nLook at where the thumbs are. chimp- orangutan – siamang. Is this because they are good at climbing trees?\n\n<img src ='/media/lyingbobo.jpg'>\n\n[[Tell me about what you learn about orangutan's mind->study about apes mind]]\n[[How did you make Bobo's face->bobo's face]]\n[[How did ou make Bobo interactive->interaction with bobo]]",
+      "links": [
+        {
+          "name": "Tell me about what you learn about orangutan's mind",
+          "link": "study about apes mind",
+          "pid": "33"
+        },
+        {
+          "name": "How did you make Bobo's face",
+          "link": "bobo's face",
+          "pid": "34"
+        },
+        {
+          "name": "How did ou make Bobo interactive",
+          "link": "interaction with bobo",
+          "pid": "35"
+        }
+      ],
+      "name": "study about apes",
+      "pid": "32",
+      "position": {
+        "x": "2650",
+        "y": "100"
+      }
+    },
+    {
+      "text": "My study about the orangutan had to go further than understanding their anatomy because ultimately I had to program bobo’s AI. I had to understand how Bobo would think.\n\nLike we know Jane Goodall discovered Chimpanzees are using tools, Orangutans also use tools. They use sticks to get honey, or they use leaves for umbrellas when it rains. Primatologist Frans De Waal mentioned this interesting case in their research.\n\nSomehow I can hear how she thinks. “Yeah, I look prettier with this hat.” Is that so different from me choosing my clothes?\n\nAnother case I found is interesting was the spitting water test. This test showed how orangutans reach an untouchable peanut by raising the water level to a container, even though they’ve never seen the same puzzle before. Each tester came up with their idea based on their experience and knowledge. Most testers completed this mission in 8 min. Honestly, I don’t think I could do better than that.\n\n<img src ='/media/suma.jpg'>\n(Suma, an orangutan at a German zoo, often embellished herself in front of a mirror, such as by putting a leaf of lettuce onto her head like a hat while staring at her reflection. Drawing by Frans De waal)\n\nThe more I learn about an orangutan’s mind, the more I think they are similar to us. They see, remember, think, learn.\n\nI started programming bobo’s brain but I still felt something odd about bobo’s behaviour. It was because he looked too mature for his age..\n\nBecause I don’t have children and hadn’t had any chance to observe a real baby, I had to rely for online reference for this as well. I watched this baby time lapse video  and I realized what I was missing.\n\nThe most basic game character AI logic is this:\n\n“Have a goal -> Do it”  \n\nIt seems way too simple, but think about yourself. Do you do something without any reason? Even to stand up from a chair you need a reason. Whether you want to check out the kitchen, go to the toilet or hang out with your friend at the cafe, we grown-ups want to be as lazy as possible. We don’t want to waste our energy.  But babies are not like this. When they are active, they have to emit their energy no matter what because their goal is not doing something, their goal is doing anything. So their actions look unpredictable and illogical. They chase after this and that, get interested and lose interest constantly. They seem more like chaos full of adrenaline. (If I did the same, people would be seriously worried about me…)\n\nLeft is the diagram I drew. \n<img src ='/media/bobo4.png'>\n\n<img src ='/media/sketch3.jpg'>\n\nUltimately a baby is a baby. A baby orangutan also wants to get hugged, get attention, to learn and play with others. I can’t believe some orangutan babies still get traded as exotic pets. Some of them get sold to illegal animal fight games. This is not how we should treat babies.    Even though some orphans luckily get rescued by organizations, they still have to learn how to survive in wild. That lesson is not going to be same as their own kind could give.\n<img src='https://www.internationalanimalrescue.org/sites/default/files/img-20141217-wa002.jpg'>\nBudi who’s the model of Bobo. He was very sick condition when he got rescued by the organization\n\n[[Tell me about physical difference of orangutan->study about apes]]\n[[How did you make Bobo's face->bobo's face]]\n\n",
+      "links": [
+        {
+          "name": "Tell me about physical difference of orangutan",
+          "link": "study about apes",
+          "pid": "32"
+        },
+        {
+          "name": "How did you make Bobo's face",
+          "link": "bobo's face",
+          "pid": "34"
+        }
+      ],
+      "name": "study about apes mind",
+      "pid": "33",
+      "position": {
+        "x": "2700",
+        "y": "325"
+      }
+    },
+    {
+      "text": "There are two systems I had to create just for bobo’s face. One is the Blend shape manager in maya. This helps me build complex blendshape trees in the very intuitive UI. I want to share this online as open source when it’s finished but I am not sure when that would be… (far to go…)\n\nThe second system is the face shape manager in Unity. Because an FBX export disconnects the maya rig, this system reconnects the rig automatically in Unity. It’s written in C#.\n\nfind all corrective shapes and connect with upper levels.\n\nconnect jaw joint with jaw blend shapes, eye joints with eye blend shapes\n\nOn facial, it’s still almost start point.\n\n<img src ='/media/0911_shapeEditor.gif'><video muted loop autoplay><source src='/media/bobo3.mp4'></video>\n\n[[How did you make Bobo interactive->interaction with bobo]]\n[[What did you learn by Bobo->planing bobo]]\n[[How did you start working on Bobo?->starting bobo]]",
+      "links": [
+        {
+          "name": "How did you make Bobo interactive",
+          "link": "interaction with bobo",
+          "pid": "35"
+        },
+        {
+          "name": "What did you learn by Bobo",
+          "link": "planing bobo",
+          "pid": "31"
+        },
+        {
+          "name": "How did you start working on Bobo?",
+          "link": "starting bobo",
+          "pid": "30"
+        }
+      ],
+      "name": "bobo's face",
+      "pid": "34",
+      "position": {
+        "x": "2500",
+        "y": "275"
+      }
+    },
+    {
+      "text": "One of the questions I frequently got asked was how I am achieving this interaction between Bobo and me. I am not using a fancy facial capture device or special camera. I am only using the built-in laptop webcam and openCV with dlib.\n\nI am not an expert so I don’t think I have a right to explain, but for anyone who’s curious, Computer Vision is technology analyzing the picture and returning information. It can be used by traffic cameras to read a car number or by home security cameras to alarm a suspicious intruder.\n\nUsing OpenCV opens the accessibility a lot. It’s cheaper for me and at the same time, anybody can try at their home without any special devices.\n\n<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video>\n\n\n[[What did you learn by Bobo->planing bobo]]\n[[How did you make Bobo's face->bobo's face]]\n[[What is the status of Bobo Project?->Bobo status]]\n[[How did you start working on Bobo?->starting bobo]]",
+      "links": [
+        {
+          "name": "What did you learn by Bobo",
+          "link": "planing bobo",
+          "pid": "31"
+        },
+        {
+          "name": "How did you make Bobo's face",
+          "link": "bobo's face",
+          "pid": "34"
+        },
+        {
+          "name": "What is the status of Bobo Project?",
+          "link": "Bobo status",
+          "pid": "17"
+        },
+        {
+          "name": "How did you start working on Bobo?",
+          "link": "starting bobo",
+          "pid": "30"
+        }
+      ],
+      "name": "interaction with bobo",
+      "pid": "35",
+      "position": {
+        "x": "2325",
+        "y": "375"
+      }
+    },
+    {
+      "text": "😓\n... Okay\n\n<b>Softwares</b>\n- Maya, blender\n- Unity3D\n- Zbrush, Mudbox, Substance painter\n- Most of Adobes\n\n<b>Languages</b>\n- Python\n- C#\n- Javascript\n- Extra Js : React.js, P5.js , Three.js\n\n<b>Others</b>\n- brain storming\n- new idea pitch\n- Tend to easily pick up anything\n\n\n[[Back to main->Hello*]]",
+      "links": [
+        {
+          "name": "Back to main",
+          "link": "Hello*",
+          "pid": "1"
+        }
+      ],
+      "name": "All Skills",
+      "pid": "36",
+      "position": {
+        "x": "1775",
+        "y": "725"
+      }
     }
   ],
   "name": "Hello",
-  "startnode": "1",
+  "startnode": "25",
   "creator": "Twine",
   "creator-version": "2.8.0",
   "ifid": "A0FCE7C7-A0A4-40FA-BF56-6AD78497434E"
