@@ -32,8 +32,8 @@
       "name": "Hello*",
       "pid": "1",
       "position": {
-        "x": "1375",
-        "y": "575"
+        "x": "1325",
+        "y": "525"
       }
     },
     {
@@ -62,8 +62,8 @@
       "name": "learned from sunset",
       "pid": "3",
       "position": {
-        "x": "2000",
-        "y": "1025"
+        "x": "1875",
+        "y": "1000"
       }
     },
     {
@@ -71,8 +71,8 @@
       "name": "Facial",
       "pid": "4",
       "position": {
-        "x": "1750",
-        "y": "575"
+        "x": "1700",
+        "y": "525"
       }
     },
     {
@@ -108,12 +108,22 @@
       "pid": "5",
       "position": {
         "x": "2175",
-        "y": "175"
+        "y": "275"
       }
     },
     {
-      "text": "<video autoplay control><source src='/media/muse_gorila_short.mp4'></video>\n\n\"There is only a perspective seeing, only a perspective \"knowing\"; and the more affects we allow to speak about one thing, the more eyes, different eyes, we can use to observe one thing, the more complete will our \"concept\" of this thing, our \"objectivity,\" be.\"\n- Friedrich Nietzsche \n\nAfter working on dozens of diverse animal projects, \"finally,\" humans have come into my focus. It's peculiar that my own species is the latest subject, but it feels different now. People who are different from me don't seem annoying anymore; instead, it's astonishing!\n\nThe Project Perspectives is an interactive web art exhibit created in 2021. Visitors entering the site can experience different perspectives of characters in the scene, and the space takes on warmth based on who you are observing.\n\nThis project emerged as I delved into delivering a distinct experience of sculpture in digital format. It stands out as one of my favorite creations.\n\n<video muted autoplay loop><source src='/media/VR_gorilla.mov'></video>\n(It's available in VR as well)\n\nThe sculptures were crafted using ZBrush and Blender, while the coding aspect utilized THREE.js and GLSL.\n\n[[Beautiful Idea! How can I try?->Try Perspectives]]\n[[What other web project did you work on?->Web Projects*]]",
+      "text": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ReIv7O2MJ10?si=LpM32XxUiicuLe2R\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\n\n\nThe Project Perspectives is an interactive web art exhibit created in 2021. Visitors entering the site can experience different perspectives of characters in the scene, and the space takes on warmth based on who you are observing.\n\nThis project emerged as I delved into delivering a distinct experience of sculpture in digital format. It stands out as one of my favorite creations.\n\n<video muted autoplay loop><source src='/media/VR_gorilla.mov'></video>\n(It's available in VR as well)\n\nThe sculptures were crafted using ZBrush and Blender, while the coding aspect utilized THREE.js and GLSL.\n\n[[How did you come up with the idea?-Perspective Idea]]\n[[What is the most challenging part of this project?->challenge of mupp]]\n[[Beautiful Idea! How can I try?->Try Perspectives]]\n[[What other web project did you work on?->Web Projects*]]",
       "links": [
+        {
+          "name": "How did you come up with the idea?-Perspective Idea",
+          "link": "How did you come up with the idea?-Perspective Idea",
+          "pid": "37"
+        },
+        {
+          "name": "What is the most challenging part of this project?",
+          "link": "challenge of mupp",
+          "pid": "38"
+        },
         {
           "name": "Beautiful Idea! How can I try?",
           "link": "Try Perspectives",
@@ -129,7 +139,7 @@
       "pid": "6",
       "position": {
         "x": "2400",
-        "y": "900"
+        "y": "750"
       }
     },
     {
@@ -160,8 +170,8 @@
       "name": "Making this site?",
       "pid": "8",
       "position": {
-        "x": "1650",
-        "y": "1425"
+        "x": "1625",
+        "y": "1350"
       }
     },
     {
@@ -182,7 +192,7 @@
       "pid": "9",
       "position": {
         "x": "1325",
-        "y": "1125"
+        "y": "1075"
       }
     },
     {
@@ -198,7 +208,7 @@
       "pid": "10",
       "position": {
         "x": "2050",
-        "y": "775"
+        "y": "825"
       }
     },
     {
@@ -239,11 +249,11 @@
       "pid": "11",
       "position": {
         "x": "1550",
-        "y": "700"
+        "y": "675"
       }
     },
     {
-      "text": "Thanks for asking! 🥹\nAfter I left the lastest full time job, I traveled and spend time for learning and developing myself. \nIn 2023, I've been mostly doing web-development projects. ([[Mupp]], [[Sunset Ave]] , [[That Timeline]] )\n\nNow I am more open to find a opportunity for collaboration.\nThat's why I renovate my site haha 🤞\n\n[[Lucky you! I have a job for you!->contact*]]\n\nOn another note, I'm currently residing somewhere in Vancouver, dedicated to expanding my knowledge and thoughts through reading and studying. Additionally, I've found a philosophical beauty in playing board games, which keeps myself playful .🎉\n\n[[I have a question for you. How can I reach out to you?->contact*]]",
+      "text": "Thanks for asking! 🥹\nAfter I left the lastest full time job, I traveled and spend time for learning and developing myself. \nIn 2023, I've been mostly doing web-development projects. ([[Mupp]], [[Sunset Ave]] , [[That Timeline]] )\n\nNow I am more open to find a opportunity for collaboration.🤞\n[[Lucky you! I have a job for you!->contact*]]\n\nOn another note, I'm currently residing somewhere in Vancouver, dedicated to expanding my knowledge and thoughts through reading and studying and recently I wrote [Dreaming harmony: Art and AI](https://choisohan.medium.com/dreaming-about-harmony-art-and-ai-999da2ef2cf6) on medium🎉\n\n[[I have a question for you. How can I reach out to you?->contact*]]",
       "links": [
         {
           "name": "Mupp",
@@ -274,8 +284,8 @@
       "name": "Thesedays*",
       "pid": "12",
       "position": {
-        "x": "1850",
-        "y": "1025"
+        "x": "1725",
+        "y": "950"
       }
     },
     {
@@ -295,8 +305,8 @@
       "name": "Mupp",
       "pid": "13",
       "position": {
-        "x": "2600",
-        "y": "950"
+        "x": "2575",
+        "y": "1050"
       }
     },
     {
@@ -311,8 +321,8 @@
       "name": "contact*",
       "pid": "14",
       "position": {
-        "x": "1450",
-        "y": "1125"
+        "x": "1550",
+        "y": "1050"
       }
     },
     {
@@ -354,7 +364,7 @@
       "pid": "16",
       "position": {
         "x": "2500",
-        "y": "450"
+        "y": "550"
       }
     },
     {
@@ -374,7 +384,7 @@
       "name": "Bobo status",
       "pid": "17",
       "position": {
-        "x": "2925",
+        "x": "2850",
         "y": "300"
       }
     },
@@ -416,8 +426,8 @@
       "name": "Try Perspectives",
       "pid": "19",
       "position": {
-        "x": "2275",
-        "y": "1200"
+        "x": "2225",
+        "y": "1175"
       }
     },
     {
@@ -448,8 +458,8 @@
       "name": "Drawings",
       "pid": "21",
       "position": {
-        "x": "1450",
-        "y": "925"
+        "x": "1475",
+        "y": "875"
       }
     },
     {
@@ -485,8 +495,8 @@
       "name": "AR Projects",
       "pid": "23",
       "position": {
-        "x": "2450",
-        "y": "1100"
+        "x": "2075",
+        "y": "450"
       }
     },
     {
@@ -517,7 +527,7 @@
       "pid": "24",
       "position": {
         "x": "2225",
-        "y": "600"
+        "y": "525"
       }
     },
     {
@@ -532,8 +542,8 @@
       "name": "I'm a blob",
       "pid": "25",
       "position": {
-        "x": "1625",
-        "y": "950"
+        "x": "1350",
+        "y": "725"
       }
     },
     {
@@ -553,8 +563,8 @@
       "name": "Shader Coding",
       "pid": "26",
       "position": {
-        "x": "2275",
-        "y": "1050"
+        "x": "2225",
+        "y": "1025"
       }
     },
     {
@@ -590,8 +600,8 @@
       "name": "P5.js",
       "pid": "28",
       "position": {
-        "x": "2125",
-        "y": "1050"
+        "x": "2025",
+        "y": "1000"
       }
     },
     {
@@ -600,7 +610,7 @@
       "pid": "29",
       "position": {
         "x": "1325",
-        "y": "1250"
+        "y": "1275"
       }
     },
     {
@@ -626,7 +636,7 @@
       "pid": "30",
       "position": {
         "x": "2425",
-        "y": "0"
+        "y": "100"
       }
     },
     {
@@ -652,7 +662,7 @@
       "pid": "31",
       "position": {
         "x": "2350",
-        "y": "150"
+        "y": "250"
       }
     },
     {
@@ -678,7 +688,7 @@
       "pid": "32",
       "position": {
         "x": "2650",
-        "y": "100"
+        "y": "200"
       }
     },
     {
@@ -699,7 +709,7 @@
       "pid": "33",
       "position": {
         "x": "2700",
-        "y": "325"
+        "y": "425"
       }
     },
     {
@@ -725,7 +735,7 @@
       "pid": "34",
       "position": {
         "x": "2500",
-        "y": "275"
+        "y": "375"
       }
     },
     {
@@ -756,11 +766,11 @@
       "pid": "35",
       "position": {
         "x": "2325",
-        "y": "375"
+        "y": "475"
       }
     },
     {
-      "text": "😓\n... Okay\n\n<b>Softwares</b>\n- Maya, blender\n- Unity3D\n- Zbrush, Mudbox, Substance painter\n- Most of Adobes\n\n<b>Languages</b>\n- Python\n- C#\n- Javascript\n- Extra Js : React.js, P5.js , Three.js\n\n<b>Others</b>\n- brain storming\n- new idea pitch\n- Tend to easily pick up anything\n\n\n[[Back to main->Hello*]]",
+      "text": "... Okay\n\n<b>Softwares</b>\n- Maya, blender\n- Unity3D\n- Zbrush, Mudbox, Substance painter\n- Most of Adobes\n\n<b>Languages</b>\n- Python\n- C#\n- Javascript\n- Extra Js : React.js, P5.js , Three.js\n\n<b>Others</b>\n- brain storming\n- new idea pitch\n- Tend to easily pick up anything\n\n\n[[Back to main->Hello*]]",
       "links": [
         {
           "name": "Back to main",
@@ -771,8 +781,55 @@
       "name": "All Skills",
       "pid": "36",
       "position": {
-        "x": "1775",
-        "y": "725"
+        "x": "1700",
+        "y": "700"
+      }
+    },
+    {
+      "text": "\"There is only a perspective seeing, only a perspective \"knowing\"; and the more affects we allow to speak about one thing, the more eyes, different eyes, we can use to observe one thing, the more complete will our \"concept\" of this thing, our \"objectivity,\" be.\"\n- Friedrich Nietzsche \n\nAfter working on dozens of diverse animal projects, \"finally,\" humans have come into my focus. It's peculiar that my own species is the latest subject, but it feels different now. People who are different from me don't seem annoying anymore; instead, it's astonishing!\n\n\n[[Beautiful Idea! How can I try?->Try Perspectives]]\n[[What other web project did you work on?->Web Projects*]]",
+      "links": [
+        {
+          "name": "Beautiful Idea! How can I try?",
+          "link": "Try Perspectives",
+          "pid": "19"
+        },
+        {
+          "name": "What other web project did you work on?",
+          "link": "Web Projects*",
+          "pid": "18"
+        }
+      ],
+      "name": "How did you come up with the idea?-Perspective Idea",
+      "pid": "37",
+      "position": {
+        "x": "2600",
+        "y": "925"
+      }
+    },
+    {
+      "text": "Sculpting these figures is tough and time-consuming.\nThe trickiest part? Nailing the perfect camera speed.\nI had to adjust it for angle and distance.\nThe default browser and VR has differnt speed because of nausea\n\n[[How did you come up with the idea?-Perspective Idea]]\n[[Beautiful Idea! How can I try?->Try Perspectives]]\n[[What other web project did you work on?->Web Projects*]]",
+      "links": [
+        {
+          "name": "How did you come up with the idea?-Perspective Idea",
+          "link": "How did you come up with the idea?-Perspective Idea",
+          "pid": "37"
+        },
+        {
+          "name": "Beautiful Idea! How can I try?",
+          "link": "Try Perspectives",
+          "pid": "19"
+        },
+        {
+          "name": "What other web project did you work on?",
+          "link": "Web Projects*",
+          "pid": "18"
+        }
+      ],
+      "name": "challenge of mupp",
+      "pid": "38",
+      "position": {
+        "x": "2375",
+        "y": "950"
       }
     }
   ],
