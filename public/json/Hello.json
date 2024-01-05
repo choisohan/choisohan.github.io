@@ -143,10 +143,10 @@
       }
     },
     {
-      "text": "Some kind of experiment to show what kind of person I am, instead of my abilities.\nAbilities are boring but I am not boring.(I think)\n\n[[How did you make this site?->Making this site?]]",
+      "text": "When I create something, there's always a story and a context.\nIt's not just about how I made it, but also why I made it and what drove me to create it. The design of this website, with its conversational style, is meant to express my intentions and desires in a straightforward manner.\n\n[[How can I make a website like this?->Making this site?]]",
       "links": [
         {
-          "name": "How did you make this site?",
+          "name": "How can I make a website like this?",
           "link": "Making this site?",
           "pid": "8"
         }
@@ -155,11 +155,11 @@
       "pid": "7",
       "position": {
         "x": "1750",
-        "y": "1200"
+        "y": "1125"
       }
     },
     {
-      "text": "<img src='/media/twine-screenshot.png'>\n\nConversation is designed with Twine and React.\nYou can clone <a href='https://github.com/choisohan/choisohan.github.io' target='_blank'> the repo </a> and modify as your own\n\n[[Back to main->Hello*]]",
+      "text": "<img src='/media/twine-screenshot.png'>\n\nThe website is created with React.js.\nI wrote my dialogue in Twine and export as Json.\nIf you want, You can clone <a href='https://github.com/choisohan/choisohan.github.io' target='_blank'> the repo </a> and modify as your own\n\n[[Back to main->Hello*]]",
       "links": [
         {
           "name": "Back to main",
@@ -170,8 +170,8 @@
       "name": "Making this site?",
       "pid": "8",
       "position": {
-        "x": "1625",
-        "y": "1350"
+        "x": "1600",
+        "y": "1275"
       }
     },
     {
@@ -207,12 +207,12 @@
       "name": "That Timeline",
       "pid": "10",
       "position": {
-        "x": "2050",
-        "y": "825"
+        "x": "2000",
+        "y": "775"
       }
     },
     {
-      "text": "If you ask \"what I can\", I trained myself as an artist.\n\n<img src ='/media/painting_chimp.jpg' > <img src ='/media/paint_fruits.jpg'> [[show me more of your arts ->Drawings]] \n\nProfessionally I've worked in various films and games, animations, application as a digital artist and developer for many years.\n[[Tell me about your professional experience.->Professional Experience]]\n\nYet I'm not just my skills; I'm more like a blob of curiosity⭐[[What?->I'm a blob]]\n[[Seriously... Tell me what you can->All Skills]]\n\n[[How are you doing thesedays?->Thesedays*]]\n[[I like to see more of you work. Do you have SNS?->SNS?]] \n",
+      "text": "If you ask \"what I can\", I trained myself as an artist.\n\n<img src ='/media/painting_chimp.jpg' > <img src ='/media/paint_fruits.jpg'> [[show me more of your arts ->Drawings]] \n\nProfessionally I've worked in various films and games, animations, application as a digital artist and developer for many years.\n[[Tell me about your professional experience.->Professional Experience]]\n\nYet I'm not just my skills; I'm more like a blob of curiosity⭐[[What?->I'm a blob]]\n[[Seriously... Tell me what you can->All Skills]]\n\n[[What do you think about your strength?->My strength]]\n[[How are you doing thesedays?->Thesedays*]]\n[[I like to see more of you work. Do you have SNS?->SNS?]] \n",
       "links": [
         {
           "name": "show me more of your arts ",
@@ -235,6 +235,11 @@
           "pid": "36"
         },
         {
+          "name": "What do you think about your strength?",
+          "link": "My strength",
+          "pid": "39"
+        },
+        {
           "name": "How are you doing thesedays?",
           "link": "Thesedays*",
           "pid": "12"
@@ -248,7 +253,7 @@
       "name": "Who are you?",
       "pid": "11",
       "position": {
-        "x": "1550",
+        "x": "1525",
         "y": "675"
       }
     },
@@ -284,7 +289,7 @@
       "name": "Thesedays*",
       "pid": "12",
       "position": {
-        "x": "1725",
+        "x": "1675",
         "y": "950"
       }
     },
@@ -321,8 +326,8 @@
       "name": "contact*",
       "pid": "14",
       "position": {
-        "x": "1550",
-        "y": "1050"
+        "x": "1525",
+        "y": "1125"
       }
     },
     {
@@ -337,8 +342,8 @@
       "name": "Professional Experience",
       "pid": "15",
       "position": {
-        "x": "2050",
-        "y": "1200"
+        "x": "1950",
+        "y": "1150"
       }
     },
     {
@@ -389,7 +394,7 @@
       }
     },
     {
-      "text": "About Web project... \nI was always a big fan of NotionHQ or Miro etc.\nAnd some point, I wishing to have more functionality for my self and started learn to create it. \nAt the beggining, I wasn't really interested in learning so much because I was already happy with my python and c# coding ability that time.\nHowever when I realize the accessiblity of the creation, I immidiately fell in love. \n\n[[<img src='/media/sunset.gif'> ->Sunset Ave]]  [[<img src ='/media/that timeline.png' >->That Timeline]]  [[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video>->The Perspective project]] ",
+      "text": "The journey I simply started to code with webGL expanded further toward learning deeply about front& backend development.\n\nThe Web project is really fun for me.\nThe result is the most accessible to various people without hussle.\nit can be very practical or it can be very mind provoking.\nThe different stacks of technology and code library excites me.\nI learned a lot about the internet by learning this.\n\n[[<img src='/media/sunset.gif'> ->Sunset Ave]]  [[<img src ='/media/that timeline.png' >->That Timeline]]  [[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video>->The Perspective project]] \n\nI also wrote some online. you can check them out too.\n[[I want to read your writings->My Writings]] ",
       "links": [
         {
           "name": "<img src='/media/sunset.gif'> ",
@@ -405,12 +410,17 @@
           "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video>",
           "link": "The Perspective project",
           "pid": "6"
+        },
+        {
+          "name": "I want to read your writings",
+          "link": "My Writings",
+          "pid": "29"
         }
       ],
       "name": "Web Projects*",
       "pid": "18",
       "position": {
-        "x": "2075",
+        "x": "1975",
         "y": "600"
       }
     },
@@ -442,8 +452,8 @@
       "name": "2017 VFX modeling reel",
       "pid": "20",
       "position": {
-        "x": "1900",
-        "y": "1200"
+        "x": "1925",
+        "y": "1350"
       }
     },
     {
@@ -458,12 +468,12 @@
       "name": "Drawings",
       "pid": "21",
       "position": {
-        "x": "1475",
-        "y": "875"
+        "x": "1500",
+        "y": "925"
       }
     },
     {
-      "text": "The latest extensive sculpting project was [[The Perspective project]] \nThese are the still cuts of each sculptures\n<img src='/media/sculpt_gorilla.jpg'>\n\nAnd here are my oldies I sculpted with oil clay\n<img src='/media/clay_girl.jpg'><img src='/media/clay_girl2.jpg'><img src='/media/clay_man.jpg'>\n\nEspecially I loved observing facial expression, It lead me into [[Facial]]",
+      "text": "The latest extensive sculpting project was [[The Perspective project]] \nThese are the still cuts of each sculptures\n<img src='/media/sculpt_gorilla.jpg'>\n\nAnd here are my oldies I sculpted with oil clay\n<img src='/media/clay_girl.jpg'><img src='/media/clay_girl2.jpg'><img src='/media/clay_man.jpg'>\n\nThis may not a classical sculpture but this is what I did with blender\n<video muted autoplay loop><source src='/media/blender_tiger.mp4'></video>\n\nIf you want something moving sculptures..\ncheck out [[Facial]] and  [[Interactive Artwork*]] ",
       "links": [
         {
           "name": "The Perspective project",
@@ -474,12 +484,17 @@
           "name": "Facial",
           "link": "Facial",
           "pid": "4"
+        },
+        {
+          "name": "Interactive Artwork*",
+          "link": "Interactive Artwork*",
+          "pid": "24"
         }
       ],
       "name": "Sculpts",
       "pid": "22",
       "position": {
-        "x": "1325",
+        "x": "1250",
         "y": "875"
       }
     },
@@ -495,30 +510,30 @@
       "name": "AR Projects",
       "pid": "23",
       "position": {
-        "x": "2075",
-        "y": "450"
+        "x": "2000",
+        "y": "400"
       }
     },
     {
-      "text": "Real-time interactive artwork stands out as a unique realm where digital art excels compared to other mediums. I embarked on this journey using Unity3D as my initial platform, gradually expanding to various other platforms and tools. Lately, I've found myself gravitating more towards web browser-friendly interactive art compared to before.\n\n[[Unity3D Projects->Bobo]]\n[[AR Projects]] \n[[Web GL Project->The Perspective project]]\n[[Generative Art->Generative Art*]]",
+      "text": "I genuinely believe that our engagement with the world is the essence of feeling truly alive. What we choose to interact with and how we navigate those interactions intricately defines who we are. Hence, transforming these interactive experiences into an art form lies at the heart of my passion.\n\n\n[[<video muted loop autoplay><source src='/media/ar_turtle.mp4'></video>->AR Projects]] [[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] \n[[<video muted autoplay loop><source srt='/media/agent_05.mp4'></video>->Generative Art*]]",
       "links": [
         {
-          "name": "Unity3D Projects",
-          "link": "Bobo",
-          "pid": "5"
-        },
-        {
-          "name": "AR Projects",
+          "name": "<video muted loop autoplay><source src='/media/ar_turtle.mp4'></video>",
           "link": "AR Projects",
           "pid": "23"
         },
         {
-          "name": "Web GL Project",
+          "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ",
           "link": "The Perspective project",
           "pid": "6"
         },
         {
-          "name": "Generative Art",
+          "name": "<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ",
+          "link": "Bobo",
+          "pid": "5"
+        },
+        {
+          "name": "<video muted autoplay loop><source srt='/media/agent_05.mp4'></video>",
           "link": "Generative Art*",
           "pid": "27"
         }
@@ -526,8 +541,8 @@
       "name": "Interactive Artwork*",
       "pid": "24",
       "position": {
-        "x": "2225",
-        "y": "525"
+        "x": "2175",
+        "y": "475"
       }
     },
     {
@@ -542,8 +557,8 @@
       "name": "I'm a blob",
       "pid": "25",
       "position": {
-        "x": "1350",
-        "y": "725"
+        "x": "1325",
+        "y": "700"
       }
     },
     {
@@ -564,11 +579,11 @@
       "pid": "26",
       "position": {
         "x": "2225",
-        "y": "1025"
+        "y": "875"
       }
     },
     {
-      "text": "[[<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>->Shader Coding]] [[<img src ='/media/rp (5).png'>->P5.js]]\n",
+      "text": "[[<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>->Shader Coding]] [[<img src ='/media/res.gif'>->P5.js]]\n",
       "links": [
         {
           "name": "<video muted autoplay loop><source srt='/media/agent_05.mp4'></video><video muted autoplay loop>",
@@ -576,7 +591,7 @@
           "pid": "26"
         },
         {
-          "name": "<img src ='/media/rp (5).png'>",
+          "name": "<img src ='/media/res.gif'>",
           "link": "P5.js",
           "pid": "28"
         }
@@ -584,12 +599,12 @@
       "name": "Generative Art*",
       "pid": "27",
       "position": {
-        "x": "2225",
-        "y": "875"
+        "x": "2200",
+        "y": "725"
       }
     },
     {
-      "text": "<img src ='/media/rp (1).png'><img src ='/media/rp (2).png'><img src ='/media/rp (3).png'><img src ='/media/rp (4).png'><img src ='/media/rp (5).png'>\n\nThe \"Resolution Party\" is a small project I developed for the end of the year. The initial concept was to host a virtual party where nobody had to fully commit, and everyone's character could dance through the endless night. It's a metaverse joke project, perfect for introverts.\n\nIt's created with P5.js and Firebase. \n\nThere was a recorded video somewhere.. still searching for it🔍\n\n[[Back to main->Hello*]]",
+      "text": "<video muted loop autoplay><source src='/media/res1.mp4'></video>\n\nThe Resolution party is my weirdest and, from a certain angle, the most pointless project. But hey, it's my fully designed brainchild! Created with P5.js and Firebase, this year-end project aimed to host a laid-back, introvert-friendly party. Programmed agents would generate dance moves, and friends from social networks joined the server, finding joy in watching their characters dance randomly on the virtual floor.\n\n<video muted loop autoplay><source src='/media/res2.mp4'></video>\n<video muted loop autoplay><source src='/media/res3.mp4'></video>\n<video muted loop autoplay><source src='/media/res4.mp4'></video>\n<img src ='/media/rp (1).png'><img src ='/media/rp (2).png'><img src ='/media/rp (3).png'><img src ='/media/rp (4).png'><img src ='/media/rp (5).png'>\n\n[[Back to main->Hello*]]",
       "links": [
         {
           "name": "Back to main",
@@ -600,8 +615,8 @@
       "name": "P5.js",
       "pid": "28",
       "position": {
-        "x": "2025",
-        "y": "1000"
+        "x": "2100",
+        "y": "875"
       }
     },
     {
@@ -770,19 +785,19 @@
       }
     },
     {
-      "text": "... Okay\n\n<b>Softwares</b>\n- Maya, blender\n- Unity3D\n- Zbrush, Mudbox, Substance painter\n- Most of Adobes\n\n<b>Languages</b>\n- Python\n- C#\n- Javascript\n- Extra Js : React.js, P5.js , Three.js\n\n<b>Others</b>\n- brain storming\n- new idea pitch\n- Tend to easily pick up anything\n\n\n[[Back to main->Hello*]]",
+      "text": ".... Okay\n\n<b>Softwares</b>\n- Maya, blender\n- Unity3D\n- Zbrush, Mudbox, Substance painter\n- Most of Adobes\n\n<b>Dev Experience with..</b>\n- Python\n- C#\n- Javascript ( React.js, P5.js , Three.js ) \n- MongoDB, Firebase\n- GLSL \n- Websocket\n\n<b>Others</b>\n- brain storming\n- new idea pitch\n- Tend to easily pick up anything\n\n[[Tell me about your professional experience.->Professional Experience]]\n",
       "links": [
         {
-          "name": "Back to main",
-          "link": "Hello*",
-          "pid": "1"
+          "name": "Tell me about your professional experience.",
+          "link": "Professional Experience",
+          "pid": "15"
         }
       ],
       "name": "All Skills",
       "pid": "36",
       "position": {
         "x": "1700",
-        "y": "700"
+        "y": "675"
       }
     },
     {
@@ -830,6 +845,15 @@
       "position": {
         "x": "2375",
         "y": "950"
+      }
+    },
+    {
+      "text": "My curiosity and open mind to learn.\nproactive problem solving. probably I think my ex collegue seems like appreciate it the most.\n\n",
+      "name": "My strength",
+      "pid": "39",
+      "position": {
+        "x": "1475",
+        "y": "1375"
       }
     }
   ],
