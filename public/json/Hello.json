@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "Hey.  You are in Choisohan's Page and this is Min. Thanks for visiting.\nWhat do you want to start conversation with?\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
+      "text": "Hello😊\nYou are in Choisohan's Page and this is Min.\nWhat would you like to start the conversation with??\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
       "links": [
         {
           "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ",
