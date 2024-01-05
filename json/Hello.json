@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "Hello. 👋 You are in Choisohan's Page and this is Min.\nWhat do you want to chat with me?\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
+      "text": "Hey.  You are in Choisohan's Page and this is Min. Thanks for visiting.\nWhat do you want to start conversation with?\n\n[[<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ->The Perspective project]]  [[<video muted autoplay loop><source src='/media/unity_bobo.mp4'></video> ->Bobo]] [[<img src='/media/game_facial.gif'> ->Facial]] [[<img src ='/media/that timeline.png' >->Web Projects*]]\n\n[[Wait..Who are you?->Who are you?]] \n",
       "links": [
         {
           "name": "<video muted loop autoplay><source src='/media/muse_gorila_short.mp4'></video> ",
@@ -258,22 +258,12 @@
       }
     },
     {
-      "text": "Thanks for asking! 🥹\nAfter I left the lastest full time job, I traveled and spend time for learning and developing myself. \nIn 2023, I've been mostly doing web-development projects. ([[Mupp]], [[Sunset Ave]] , [[That Timeline]] )\n\nNow I am more open to find a opportunity for collaboration.🤞\n[[Lucky you! I have a job for you!->contact*]]\n\nOn another note, I'm currently residing somewhere in Vancouver, dedicated to expanding my knowledge and thoughts through reading and studying and recently I wrote [Dreaming harmony: Art and AI](https://choisohan.medium.com/dreaming-about-harmony-art-and-ai-999da2ef2cf6) on medium🎉\n\n[[I have a question for you. How can I reach out to you?->contact*]]",
+      "text": "Thanks for asking! 🥹\nAfter I left the lastest full time job, I traveled and spend time for learning and developing myself. \nIn 2023, I've been mostly doing [[web-development projects->Web Projects*]]\n\nNow I am more open to find a opportunity for collaboration.🤞\n[[Lucky you! I have a job for you!->contact*]]\n\nOn another note, I'm currently residing somewhere in Vancouver, dedicated to expanding my knowledge and thoughts.\n\n[[I have a question for you. How can I reach out to you?->contact*]]",
       "links": [
         {
-          "name": "Mupp",
-          "link": "Mupp",
-          "pid": "13"
-        },
-        {
-          "name": "Sunset Ave",
-          "link": "Sunset Ave",
-          "pid": "2"
-        },
-        {
-          "name": "That Timeline",
-          "link": "That Timeline",
-          "pid": "10"
+          "name": "web-development projects",
+          "link": "Web Projects*",
+          "pid": "18"
         },
         {
           "name": "Lucky you! I have a job for you!",
