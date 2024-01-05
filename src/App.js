@@ -83,9 +83,7 @@ const App =  ()=> {
               twineJsonRef.current = sorted
                 var _history = localStorage.getItem('history');
                 _history = _history ?  JSON.parse(_history) : []; 
-                var url = window.location.pathname.replace('/','');
-                if(url.length<1){_history.push('1')}
-                else{_history.push(url)}
+                if(_history.length < 1){_history.push('1')}
                 console.log({init: _history })
                 addHistory(_history )
 

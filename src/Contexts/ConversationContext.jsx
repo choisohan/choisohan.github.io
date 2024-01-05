@@ -1,6 +1,5 @@
 
 import React, { useState , useContext, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
 
 const HistoryContext = React.createContext();
 const HistoryUpdateContext = React.createContext();
@@ -14,7 +13,6 @@ export function useUpdateHistory(){
 
 export const ConversationContextProvider = ( {children} )=>  {
     const [history, setHistory] = useState([]); 
-    const navigate = useNavigate();
 
     const addHistory= pid =>{
         if(typeof(pid) =='string'){
@@ -41,7 +39,6 @@ export const ConversationContextProvider = ( {children} )=>  {
 
     useEffect(()=>{
         if(history.length > 0 ){
-            navigate(history[history.length - 1])
             localStorage.setItem('history', JSON.stringify(history) )
         }
     },[history])
