@@ -1,0 +1,55 @@
+.menu{
+    position: fixed;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+
+.contentBody{
+    transition: all .2s ;
+    padding : 100px 10px;
+    max-width: 800px;
+    width:100%;
+    float:right;
+    min-height: 100vh;
+    align-content:center;
+}
+.contentBody >:last-child >div{
+    display: flex;
+    flex-direction: column ;
+    gap:10px;
+    align-items: center;
+}
+.contentBody img, .contentBody video{
+    max-width: 500px;
+}
+.contentBody img.full, .contentBody video.full{
+    max-width: 100% ;
+}
+.contentBody img.small, .contentBody video.small{
+    max-width: 300px;
+}
+.open-target{
+    transition: all .2s;
+}
+body:has(.open-menu-button.clicked) .open-target{
+    transform: translateX(-100%);
+}
+
+.yearlyGridPreview::-webkit-scrollbar {
+    display: none;
+}
+.yearlyGridPreview > :last-child{
+    padding-bottom: 100px;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .menu {
+        width:100%;
+        margin:1px !important;
+        position:static;
+    }
+
+}

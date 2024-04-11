@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(layout.css);
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  @apply font-sans; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +21,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
 }
 
 @layer utilities {
@@ -31,3 +29,62 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #e7e7e7;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+
+@layer base {
+  h1 {
+    @apply text-5xl;
+    @apply font-bold;
+    @apply font-serif; 
+   /* @apply mt-5; 
+    @apply pt-5; */
+  }
+  h2 {
+    @apply text-4xl;
+    @apply font-bold;
+  /*  @apply mt-4; 
+    @apply pt-4; */
+  }
+  h3 {
+    @apply text-3xl;
+    @apply font-semibold;
+  /*  @apply mt-2; 
+    @apply pt-2; */
+  }
+  h4 {
+    @apply text-2xl;
+    @apply font-semibold;
+  }
+
+
+}
+
+.hover-scale:hover{
+  scale:1.1 !important; 
+  font-weight: bold;
+}
+
+

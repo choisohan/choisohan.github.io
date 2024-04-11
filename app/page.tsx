@@ -1,17 +1,25 @@
-import Link from 'next/link';
-import getPostMetadatas from '@/components/GetPostMetadatas';
-import PostPreview from '@/components/PostPreview';
+import { TagButton } from "@/components/Theme_TwoBlocks/ClientComponents";
 
 const Home = ()=>{
+    const tags = ['Artist','Developer']
+    
+    return <div className='place-content-center text-center h-full'>
+<div className="italic">
+    "No boundary for creating something new"
+</div><br />
+    <TagButton name='Artist'/> ,
+    <TagButton name='Developer'/>
 
-  const postMetadatas = getPostMetadatas();
-  const postPreview = postMetadatas.map(post=>(
-    <PostPreview key={post.slug} {...post} />
-  ))
+<br />
+<span className="mt-10 text-sm">
+    mjwithu09@gmail.com
+</span>
 
 
+    </div>
+    
 
-  return <h1>{postPreview}</h1>
+
 }
 
 export default Home;
