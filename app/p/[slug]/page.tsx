@@ -2,6 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import { TagButton } from '@/components/Theme_TwoBlocks/ClientComponents';
+import { getProjectMetadatas } from '@/components/ProjectMetadata';
 
 const getPostContent = (slug:string) =>{
     const folder = `public/projects/`;
@@ -11,6 +12,13 @@ const getPostContent = (slug:string) =>{
     return matterResult; 
 }
 
+
+export const generateStaticParams = async()=>{
+    const posts = getProjectMetadatas();
+    return posts.map(post =>({
+        slug: post.slug
+}))
+}
 const PostPage = ( props:any ) => {
     const slug = props.params.slug;
     const post = getPostContent(slug); 
