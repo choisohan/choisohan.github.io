@@ -4,14 +4,14 @@ import "./globals.css";
 import YearlyGridPreview from "@/components/Theme_TwoBlocks/YearlyGridPreview";
 import { ToggleButton ,DynamicStyle } from "@/components/Theme_TwoBlocks/ClientComponents";
 import Link from "next/link";
-
+import { Suspense } from "react";
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
 
   return (
 
       <html lang="en">
         <body>
-          <DynamicStyle />
+          <Suspense><DynamicStyle /></Suspense>
 
           <div className="menu flex flex-col m-5 pointer-events-none">
             <Link href='/' className="text-8xl font-serif font-extrabold pointer-events-auto">ChoiSohan</Link>

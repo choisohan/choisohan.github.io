@@ -1,11 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-
 import { useSearchParams } from 'next/navigation'
-
 export const ToggleButton = (props:any) =>{
     const [clicked, setClicked] = useState(false);
     return <button onClick={()=>{
