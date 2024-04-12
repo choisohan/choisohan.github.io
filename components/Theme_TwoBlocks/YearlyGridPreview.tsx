@@ -46,7 +46,7 @@ const YearlyGridPreview = (props:any)=>{
                 <div className="w-full">{year}</div>
                 <div className="flex gap-2">
                     {projects.filter(project => new Date(project.start).getFullYear() == year )
-                            .map(project=> ProjectPreview(project) ) }
+                            .map((project:any)=> ProjectPreview(project) ) }
                 </div>
             </div>
         )}
