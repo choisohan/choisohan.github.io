@@ -2,7 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import { getAboutMetadatas } from '@/components/AboutMetadatas';
-import { SetLayout } from '@/components/context/LayoutContext';
+import { LayoutComponent } from '@/components/context/LayoutContext';
 
 const getPostContent = (slug:string) =>{
     const folder = `public/abouts/`;
@@ -28,7 +28,7 @@ const PostPage = ( props:any ) => {
     return(
     <> 
     <div><Markdown>{post.content}</Markdown></div>
-    <SetLayout />
+    <LayoutComponent />
     </>
     )
 }

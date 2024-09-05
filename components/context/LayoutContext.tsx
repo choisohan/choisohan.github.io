@@ -41,17 +41,14 @@ const LayoutProvider: React.FC<MyProviderProps> = ({ children }) => {
 };
 
 
-const SetLayout = (_key:string, _value:boolean)=>{
+const LayoutComponent = ()=>{
+
    const {layout,setLayout} = useContext(LayoutContext)
 
    useEffect(()=>{
-    setLayout( (prevLayout) =>{
-      const _layout = {...prevLayout};
-      _layout[_value] = _key;
-      return _layout;
-    })
+    setLayout({focusMode:true})
    },[])
 
    return null;
 }
-export { LayoutContext, LayoutProvider , SetLayout };
+export { LayoutContext, LayoutProvider , LayoutComponent };

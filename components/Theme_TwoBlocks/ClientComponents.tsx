@@ -7,6 +7,7 @@ import { LayoutContext } from "../context/LayoutContext";
 
 export const ToggleButton = (props:any) =>{
     const {layout,setLayout} = useContext(LayoutContext);
+    
     return <button onClick={()=>{
         setLayout( { focusMode : layout.focusMode == true ? false: true } );
     }} className={ `${props.className} ${layout.focusMode?' clicked':''}` } >{props.children}</button>
