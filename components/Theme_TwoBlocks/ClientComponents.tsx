@@ -6,9 +6,9 @@ import { useSearchParams } from 'next/navigation'
 import { LayoutContext } from "../context/LayoutContext";
 
 export const ToggleButton = (props:any) =>{
-    const {layout,updateLayout} = useContext(LayoutContext);
+    const {layout,setLayout} = useContext(LayoutContext);
     return <button onClick={()=>{
-        updateLayout('focusMode', layout.focusMode == true ? false: true  );
+        setLayout( { focusMode : layout.focusMode == true ? false: true } );
     }} className={ `${props.className} ${layout.focusMode?' clicked':''}` } >{props.children}</button>
 }
 

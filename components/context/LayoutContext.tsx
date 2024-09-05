@@ -25,34 +25,31 @@ const LayoutContext = createContext<LayoutContextType>(defaultLayout);
 
 interface MyProviderProps {children: ReactNode;}
 
+
 // Create a Provider component
 const LayoutProvider: React.FC<MyProviderProps> = ({ children }) => {
 
-  const [layout, setLayout] = useState<Layout>({})
+  const [layout, setLayout] = useState<Layout>({focusMode:false})
 
 
-  const updateLayout = (_value:String, _key:Boolean )=>{
-    setLayout( (prevLayout) =>{
-      const _layout = {...prevLayout};
-      _layout[_value] = _key;
-      console.log( _layout )
-      return _layout;
-    })
-  }
   
   return (
-    <LayoutContext.Provider value={{ layout, updateLayout }} >
+    <LayoutContext.Provider value={{ layout, setLayout }} >
       {children}
     </LayoutContext.Provider>
   );
 };
 
 
-const SetLayout = (_key, _value)=>{
-   const {layout,updateLayout} = useContext(LayoutContext)
+const SetLayout = (_key:string, _value:boolean)=>{
+   const {layout,setLayout} = useContext(LayoutContext)
 
    useEffect(()=>{
-    updateLayout('focusMode',true)
+    setLayout( (prevLayout) =>{
+      const _layout = {...prevLayout};
+      _layout[_value] = _key;
+      return _layout;
+    })
    },[])
 
    return null;
