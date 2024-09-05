@@ -4,7 +4,7 @@ import  { createContext, useState, ReactNode, useEffect, useContext } from 'reac
 
 
 interface Layout {
-  focusMode: false
+  focusMode: Boolean
 }
 
 
@@ -19,6 +19,7 @@ const defaultLayout: LayoutContextType = {
   layout: {focusMode:false},
   setLayout: () => {},
 };
+
 
 // Create a Context
 const LayoutContext = createContext<LayoutContextType>(defaultLayout);
@@ -46,7 +47,7 @@ const LayoutComponent = ()=>{
    const {layout,setLayout} = useContext(LayoutContext)
 
    useEffect(()=>{
-    setLayout({focusMode:true})
+    setLayout( { focusMode : true })
    },[])
 
    return null;
