@@ -1,13 +1,15 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState , useContext } from "react"
 import { useRouter } from "next/navigation";
 import { useSearchParams } from 'next/navigation'
+import { LayoutContext } from "../context/LayoutContext";
+
 export const ToggleButton = (props:any) =>{
-    const [clicked, setClicked] = useState(false);
+    const {layout,updateLayout} = useContext(LayoutContext);
     return <button onClick={()=>{
-        setClicked( prev =>  prev == true ? false: true );
-    }} className={ `${props.className} ${clicked?' clicked':''}` } >{props.children}</button>
+        updateLayout('focusMode', layout.focusMode == true ? false: true  );
+    }} className={ `${props.className} ${layout.focusMode?' clicked':''}` } >{props.children}</button>
 }
 
 export const TagButton = (props:any)=>{
@@ -44,7 +46,11 @@ export const DynamicStyle=()=>{
             const openButton:any = document.querySelector('.open-menu-button');
             openButton.classList.remove('clicked')
         }
-        else{setStyleString('')}
+        else{
+            _styleString = `.project-preview.hidden}{
+                    display:block;}`;
+            setStyleString(_styleString)
+        }
 
     },[params])//whenevr refresh
 
