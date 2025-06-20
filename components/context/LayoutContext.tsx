@@ -57,7 +57,7 @@ const LayoutComponent = ()=>{
    const {layout,setLayout} = useContext(LayoutContext)
 
    useEffect(()=>{
-    setLayout( { focusMode : true })
+    setLayout( { focusMode : true , lightbox:null  })
    },[])
 
    return null;
