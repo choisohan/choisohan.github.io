@@ -10,6 +10,13 @@ export const ToggleButton = (props:any) =>{
     const router = useRouter(); 
     const searchParams = useSearchParams();
 
+    useEffect(()=>{
+        const fValue = searchParams.get("f")==="1" ? true: false ;
+        if(fValue){
+            setLayout({...layout, focusMode: fValue })
+        }
+    },[])
+
     const onClick = ()=>{
         const f = layout.focusMode == true ? false: true; 
         const params = new URLSearchParams(searchParams.toString());
