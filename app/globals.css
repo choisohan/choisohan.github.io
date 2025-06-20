@@ -56,20 +56,20 @@ body {
 
 @layer base {
   h1 {
-    @apply text-5xl;
+    @apply text-8xl;
     @apply font-bold;
     @apply font-serif; 
    /* @apply mt-5; 
     @apply pt-5; */
   }
   h2 {
-    @apply text-4xl;
+    @apply text-5xl;
     @apply font-bold;
   /*  @apply mt-4; 
     @apply pt-4; */
   }
   h3 {
-    @apply text-3xl;
+    @apply text-4xl;
     @apply font-semibold;
   /*  @apply mt-2; 
     @apply pt-2; */

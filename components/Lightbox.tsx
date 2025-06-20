@@ -85,10 +85,9 @@ function ZoomableVideo({ children }: { children: ReactNode }) {
       )}
   */
   return <video
-        controls
+        controls autoPlay muted loop
         onClick={onClick}
-        className="cursor-zoom-in max-w-full h-auto block"
-        style={{ maxHeight: "400px" }}
+        className="cursor-zoom-in max-w-full h-auto block" 
       >
         <source src={src} type="video/mp4" />
     </video>
