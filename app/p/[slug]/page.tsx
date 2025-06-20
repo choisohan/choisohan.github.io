@@ -3,6 +3,7 @@ import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import { TagButton } from '@/components/Theme_TwoBlocks/ClientComponents';
 import { getProjectMetadatas } from '@/components/ProjectMetadata';
+import { ZoomableImage, ZoomableVideo } from '@/components/Lightbox';
 
 const getPostContent = (slug:string) =>{
     const folder = `public/projects/`;
@@ -17,8 +18,10 @@ export const generateStaticParams = async()=>{
     const posts = getProjectMetadatas();
     return posts.map(post =>({
         slug: post.slug
-}))
+    }))
 }
+
+
 const PostPage = ( props:any ) => {
     const slug = props.params.slug;
     const post = getPostContent(slug); 
@@ -35,7 +38,11 @@ const PostPage = ( props:any ) => {
             </div>
 
 
-            <div><Markdown>{post.content}</Markdown></div>
+            <div><Markdown options={{overrides:{
+                img:{component: ZoomableImage},
+                video: { component: ZoomableVideo }
+            }}}>
+            {post.content}</Markdown></div>
         </>
 
     )

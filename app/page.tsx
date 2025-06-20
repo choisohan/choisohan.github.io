@@ -4,9 +4,9 @@ const Home = ()=>{
     const tags = ['Artist','Developer']
     
     return <div className='place-content-center text-center h-full'>
-<div className="text-5xl leading-normal">
+<div className="text-5xl leading-norma font-serif font-bold">
     Hi. I am Min. <br></br>
-    I make images by my Hands and Codes.
+    I make images by Hands and Codes.
 </div><br />
     <TagButton name='Artist'/> ,
     <TagButton name='Developer'/>

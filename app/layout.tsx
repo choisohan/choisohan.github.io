@@ -2,7 +2,7 @@
 
 import "./globals.css";
 import YearlyGridPreview from "@/components/Theme_TwoBlocks/YearlyGridPreview";
-import { ToggleButton ,DynamicStyle } from "@/components/Theme_TwoBlocks/ClientComponents";
+import { ToggleButton ,DynamicStyle, Footer } from "@/components/Theme_TwoBlocks/ClientComponents";
 import Link from "next/link";
 import { Suspense } from "react";
 import { LayoutProvider } from "@/components/context/LayoutContext";
@@ -23,7 +23,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
               <YearlyGridPreview className='open-target yearlyGridPreview pointer-events-auto' />
             </div>
             <ToggleButton className='open-menu-button fixed top-2 right-2 hover-scale '>Focus Mode</ToggleButton>
-
+            <Footer />
           </LayoutProvider>
 
         </body>
