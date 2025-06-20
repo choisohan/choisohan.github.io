@@ -1,6 +1,5 @@
 "use client"
 import  { createContext, useState, ReactNode, useEffect, useContext } from 'react';
-import { useSearchParams } from 'next/navigation';
 
 interface Layout {
   focusMode: Boolean,
@@ -30,9 +29,11 @@ interface MyProviderProps {children: ReactNode;}
 // Create a Provider component
 const LayoutProvider: React.FC<MyProviderProps> = ({ children }) => {
 
+  /*
   const searchParams = useSearchParams();
   const fValue = searchParams.get("f")==="1" ? true: false ;
-  const [layout, setLayout] = useState<Layout>({focusMode:fValue, lightbox: null })
+  */ 
+  const [layout, setLayout] = useState<Layout>({focusMode:false, lightbox: null })
 
 
   return (

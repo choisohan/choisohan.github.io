@@ -21,7 +21,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             <div className="menu flex flex-col m-5">
               <span>
               <Link href='/' className="site-title text-5xl font-serif font-extrabold">ChoiSohan </Link>
-              <ToggleButton />
+              <Suspense><ToggleButton /></Suspense>
 
               </span>
               <YearlyGridPreview className='open-target yearlyGridPreview ' />
