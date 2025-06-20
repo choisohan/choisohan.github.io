@@ -18,11 +18,14 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             <Suspense><DynamicStyle /></Suspense>
             <div className="contentBody">{children}</div>
 
-            <div className="menu flex flex-col m-5 pointer-events-none">
-              <Link href='/' className="site-title text-8xl font-serif font-extrabold pointer-events-auto">ChoiSohan</Link>
-              <YearlyGridPreview className='open-target yearlyGridPreview pointer-events-auto' />
+            <div className="menu flex flex-col m-5">
+              <span>
+              <Link href='/' className="site-title text-8xl font-serif font-extrabold">ChoiSohan </Link>
+              <ToggleButton />
+
+              </span>
+              <YearlyGridPreview className='open-target yearlyGridPreview ' />
             </div>
-            <ToggleButton className='open-menu-button fixed top-2 right-2 hover-scale '>Focus Mode</ToggleButton>
             <Footer />
           </LayoutProvider>
 

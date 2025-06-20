@@ -2,7 +2,8 @@
 "use client";
 
 // components/ZoomableImage.tsx
-import { ReactNode, useState, ReactElement } from "react";
+import { ReactNode, useState, useContext } from "react";
+import { LayoutContext } from "./context/LayoutContext";
 
 type Props = {
   src?: string;
@@ -10,38 +11,31 @@ type Props = {
 };
 
 function ZoomableImage({ src, alt }: Props) {
-  const [isOpen, setIsOpen] = useState(false);
+ const {layout,setLayout} = useContext(LayoutContext);
 
-  if (!src) return ;
 
-  return (
-    <>
-      <img
-        src={src}
-        alt={alt}
-        onClick={() => setIsOpen(true)}
-        className="cursor-zoom-in max-w-full h-auto"
-      />
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 h-screen w-screen"
-          onClick={() => setIsOpen(false)}
-        >
-          <img
+
+  const onClick =()=>{
+    setLayout({...layout, lightbox:<img
             src={src}
             alt={alt}
             className="max-w-full max-h-full object-contain cursor-zoom-out"
-          />
-        </div>
-      )}
-    </>
-  );
-}
+          />});
+  }
+  if (!src) return ;
+
+  return <img
+        src={src}
+        alt={alt}
+        onClick={onClick}
+        className="cursor-zoom-in max-w-full h-auto"
+      />}
 
 
 
 function ZoomableVideo({ children }: { children: ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
+   const {layout,setLayout} = useContext(LayoutContext);
+
   let src: string | undefined;
   // Find <source src="..." /> among children
   const childArray = Array.isArray(children) ? children : [children];
@@ -57,20 +51,25 @@ function ZoomableVideo({ children }: { children: ReactNode }) {
     }
   });
 
+
+  const onClick =()=>{
+    setLayout({...layout,
+      lightbox:
+              <video
+            controls
+            autoPlay
+            className="max-w-full max-h-full object-contain cursor-zoom-out"
+          >
+            <source src={src} type="video/mp4" />
+          </video>
+    });
+  }
+
+
   if (!src) return null;
 
-  return (
-    <>
-      <video
-        controls
-        onClick={() => setIsOpen(true)}
-        className="cursor-zoom-in max-w-full h-auto block"
-        style={{ maxHeight: "400px" }}
-      >
-        <source src={src} type="video/mp4" />
-      </video>
-
-      {isOpen && (
+  /*
+        {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={() => setIsOpen(false)}
@@ -84,8 +83,17 @@ function ZoomableVideo({ children }: { children: ReactNode }) {
           </video>
         </div>
       )}
-    </>
-  );
+  */
+  return <video
+        controls
+        onClick={onClick}
+        className="cursor-zoom-in max-w-full h-auto block"
+        style={{ maxHeight: "400px" }}
+      >
+        <source src={src} type="video/mp4" />
+    </video>
+
+
 
 
 }

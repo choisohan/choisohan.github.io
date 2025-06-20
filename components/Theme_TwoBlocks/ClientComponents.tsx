@@ -9,7 +9,6 @@ export const ToggleButton = (props:any) =>{
     const {layout,setLayout} = useContext(LayoutContext);
     const router = useRouter(); 
     const searchParams = useSearchParams();
-    const params = new URLSearchParams(searchParams.toString());
 
     const onClick = ()=>{
         const f = layout.focusMode == true ? false: true; 
@@ -21,11 +20,15 @@ export const ToggleButton = (props:any) =>{
         }
         router.push(`?${params.toString()}`, { });
 
-        setLayout( { focusMode :  f } );
+        setLayout( { ...layout, focusMode :  f } );
 
     }
 
-    return <button onClick={onClick} className={ `${props.className} ${layout.focusMode?' clicked':''}` } >{props.children}</button>
+    return <>
+     <button onClick={onClick} className={ `open-menu-button bg-black transition-transform ${layout.focusMode?' clicked':''}` } >
+        {layout.focusMode?'More':'Focus Mode'}
+    </button>
+    </>
 }
 
 export const TagButton = (props:any)=>{

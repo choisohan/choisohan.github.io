@@ -12,7 +12,7 @@
     width:100%;
     min-height: 100vh;
     align-content:center;
-    /*transform: translateX(250px);*/
+    transform: translateX(250px);
     place-self: center;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -40,17 +40,30 @@
 .open-target{
     transition: all .2s;
 }
+
+.open-menu-button{
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    padding: 2px;
+    color:transparent
+}
+.open-menu-button:hover{
+    width: auto;
+    color: white;
+}
+
 body:has(.open-menu-button.clicked) .site-title{
     display: none;
 }
 
 body:has(.open-menu-button.clicked) .open-target{
-    /*transform: translateX(-100%); */
+    transform: translateX(-100%); 
     opacity: 0%;
     pointer-events: none;
 }
 body:has(.open-menu-button.clicked) .contentBody{
-    /* transform: translateX(0%); */
+    transform: translateX(0%); 
 }
 .yearlyGridPreview::-webkit-scrollbar {
     display: none;
