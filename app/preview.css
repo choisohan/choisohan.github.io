@@ -24,7 +24,7 @@
 
 
         img , video {
-            max-height : -webkit-fill-available; 
+           /* max-height : -webkit-fill-available;  */ 
             height:auto; 
             max-width:unset;
         }
@@ -35,7 +35,7 @@
     z-index: 9;
 
     div{
-        width:200px !important;
+        width:100px !important;
     }
     img , video {
         margin: 0%; 

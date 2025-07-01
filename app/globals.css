@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import url(layout.css);
-
+@import "@fontsource/roboto/400.css"; 
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -21,6 +21,7 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -65,14 +66,14 @@ body {
   h2 {
     @apply text-5xl;
     @apply font-bold;
-  /*  @apply mt-4; 
-    @apply pt-4; */
+    @apply mt-4; 
+    @apply pt-4; 
   }
   h3 {
     @apply text-4xl;
     @apply font-semibold;
-  /*  @apply mt-2; 
-    @apply pt-2; */
+    @apply mt-2; 
+    @apply pt-2; 
   }
   h4 {
     @apply text-2xl;

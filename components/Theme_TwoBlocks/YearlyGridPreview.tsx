@@ -27,7 +27,7 @@ const Thumbnail = (props:any)=>{
 
 const ProjectPreview = (item:ProjectMetadata) =>{
     return <Link href={`/p/${item.slug}`}
-        className={`project-preview bg-slate-200 w-[120px] h-[150px] overflow-hidden transform ${item.tags.replace(/,/g,' ')}`}>
+        className={`project-preview bg-slate-200 h-32  overflow-hidden transform ${item.tags.replace(/,/g,' ')}`}>
         <Thumbnail path={item.thumbnail} className="w-full h-full object-cover" />
     </Link>
 
@@ -43,8 +43,8 @@ const YearlyGridPreview = (props:any)=>{
         
         {getYears(projects).reverse().map( year =>
             <div>
-                <div className="w-full">{year}</div>
-                <div className="flex gap-5">
+                <div className="w-full text-xs">{year}</div>
+                <div className="flex gap-2">
                     {projects.filter(project => new Date(project.start).getFullYear() == year )
                             .map((project:any)=> ProjectPreview(project) ) }
                 </div>

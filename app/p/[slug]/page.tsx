@@ -4,6 +4,12 @@ import matter from 'gray-matter';
 import { TagButton } from '@/components/Theme_TwoBlocks/ClientComponents';
 import { getProjectMetadatas } from '@/components/ProjectMetadata';
 import { ZoomableImage, ZoomableVideo } from '@/components/Lightbox';
+import CodeBlock from '@/components/CodeBlock';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from "remark-gfm";
+import remarkBreaks from "remark-breaks";
+
+import rehypeRaw from "rehype-raw";
 
 const getPostContent = (slug:string) =>{
     const folder = `public/projects/`;
@@ -38,11 +44,22 @@ const PostPage = ( props:any ) => {
             </div>
 
 
-            <div><Markdown options={{overrides:{
-                img:{component: ZoomableImage},
-                video: { component: ZoomableVideo }
-            }}}>
-            {post.content}</Markdown></div>
+            <div>
+                
+            <ReactMarkdown
+                remarkPlugins={[remarkBreaks]}
+                rehypePlugins={[rehypeRaw]}
+                components={{
+                    img:ZoomableImage,
+                    video:ZoomableVideo,
+                    code:CodeBlock}}>
+            
+                {post.content}
+            </ReactMarkdown>
+                        
+
+            
+            </div>
         </>
 
     )
