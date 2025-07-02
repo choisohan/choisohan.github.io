@@ -27,7 +27,7 @@ const Thumbnail = (props:any)=>{
 
 const ProjectPreview = (item:ProjectMetadata) =>{
     return <Link href={`/p/${item.slug}`}
-        className={`bg-slate-200 overflow-hidden transform ${item.tags.replace(/,/g,' ')}`}>
+        className={`rounded-md bg-slate-200 overflow-hidden transform ${item.tags.replace(/,/g,' ')}`}>
         <Thumbnail path={item.thumbnail} className="object-cover h-32 w-auto " />
     </Link>
 

@@ -50,9 +50,26 @@ const PostPage = ( props:any ) => {
                 remarkPlugins={[remarkBreaks]}
                 rehypePlugins={[rehypeRaw]}
                 components={{
+                    
                     img:ZoomableImage,
                     video:ZoomableVideo,
-                    code:CodeBlock}}>
+
+                    // Code Highlight
+                    code:CodeBlock,
+
+                    // Bullet Points
+                    ul: ({ children }) => <ul className="list-disc pl-5 space-y-1">{children}</ul>,
+                    ol: ({ children }) => <ol className="list-decimal pl-5 space-y-1">{children}</ol>,
+                    li: ({ children }) => <li className="text-base">{children}</li>,
+
+
+                    // Callouts
+                    blockquote: ({ children }) => (
+                    <blockquote className="border-l-4 border-blue-200 pl-4 bg-gray-100 my-4 p-2 ">
+                        {children}
+                    </blockquote>
+                    ),
+                    }}>
             
                 {post.content}
             </ReactMarkdown>

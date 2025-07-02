@@ -26,14 +26,14 @@ const language =className?.replace(/(language|lang)-/, "")?.toLowerCase() || "te
 
   if (!isBlock) {
     return (
-      <code className="bg-gray-200 text-sm px-1 rounded">
+      <code className="bg-gray-200 text-sm px-1 rounded ">
         {code}
       </code>
     );
   }
 
   return (
-    <SyntaxHighlighter language={language} style={vscDarkPlus} PreTag="div">
+    <SyntaxHighlighter language={language} className="rounded-md" style={vscDarkPlus} PreTag="div">
       {code}
     </SyntaxHighlighter>
   );
