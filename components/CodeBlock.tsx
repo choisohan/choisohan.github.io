@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import type { ReactNode } from 'react';
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
