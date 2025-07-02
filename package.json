@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "resolutions": {
-    "vfile-message": "^3.1.0"
+    "vfile-message": "3.1.0"
   },
   "scripts": {
     "dev": "next dev",
