@@ -2,7 +2,8 @@
 "use client";
 
 // components/ZoomableImage.tsx
-import { ReactNode, useContext ,  isValidElement, ReactElement   } from "react";
+import type { ReactNode } from 'react';
+import { useContext ,  isValidElement, ReactElement   } from "react";
 import { LayoutContext } from "./context/LayoutContext";
 
 import type { VideoHTMLAttributes } from "react";
