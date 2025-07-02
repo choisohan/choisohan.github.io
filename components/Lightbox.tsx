@@ -2,8 +2,11 @@
 "use client";
 
 // components/ZoomableImage.tsx
-import { ReactNode, useState, useContext } from "react";
+import { ReactNode, useContext ,  isValidElement, ReactElement   } from "react";
 import { LayoutContext } from "./context/LayoutContext";
+
+import type { VideoHTMLAttributes } from "react";
+
 
 type Props = {
   src?: string;
@@ -35,49 +38,57 @@ function ZoomableImage({ src, alt }: Props) {
 
 
 
-function ZoomableVideo({ children, className }: { children: ReactNode; className?: string }) {
-   const {layout,setLayout} = useContext(LayoutContext);
+
+export default function ZoomableVideo(
+  props: VideoHTMLAttributes<HTMLVideoElement> & { children?: ReactNode }
+) {
+  const { layout, setLayout } = useContext(LayoutContext);
+  const { children, className, ...rest } = props;
 
   let src: string | undefined;
-  // Find <source src="..." /> among children
-  const childArray = Array.isArray(children) ? children : [children];
-  childArray.forEach((child) => {
-    if (
-      typeof child === "object" &&
-      child !== null &&
-      "type" in child &&
-      child.type === "source" &&
-      "props" in child
-    ) {
-      src = child.props.src;
+
+  // Support both <video src=""> and <video><source src="" /></video>
+  if ('src' in props && props.src) {
+    src = props.src;
+  } else if (children) {
+    const childArray = Array.isArray(children) ? children : [children];
+    for (const child of childArray) {
+      if (
+        isValidElement(child) &&
+        child.type === 'source' &&
+        'src' in child.props
+      ) {
+        src = child.props.src;
+        break;
+      }
     }
-  });
-
-
-  const onClick =()=>{
-    setLayout({...layout,
-      lightbox:
-              <video
-            controls
-            autoPlay
-            className="max-w-full max-h-full object-contain cursor-zoom-out"
-          >
-            <source src={src} type="video/mp4" />
-          </video>
-    });
   }
-
-
 
   if (!src) return null;
 
-  return <video
-        controls autoPlay muted loop
-        onClick={onClick}
-        className={`cursor-zoom-in max-w-full h-auto block ${className ?? ""}`}
-      >
-        <source src={src} type="video/mp4" />
-    </video>
+  const onClick = () => {
+    setLayout({
+      ...layout,
+      lightbox: (
+        <video
+          controls
+          autoPlay
+          className="max-w-full max-h-full object-contain cursor-zoom-out"
+        >
+          <source src={src} type="video/mp4" />
+        </video>
+      ),
+    });
+  };
 
+  return (
+    <video
+      {...rest}
+      onClick={onClick}
+      className={`cursor-zoom-in max-w-full h-auto block ${className ?? ""}`}
+    >
+      {children}
+    </video>
+  );
 }
 export { ZoomableImage , ZoomableVideo }
