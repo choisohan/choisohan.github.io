@@ -57,9 +57,10 @@ export default function ZoomableVideo(
       if (
         isValidElement(child) &&
         child.type === 'source' &&
-        'src' in child.props
+        'props' in (child as ReactElement)
       ) {
-        src = child.props.src;
+        const source = child as ReactElement;
+        src = source.props.src;
         break;
       }
     }
