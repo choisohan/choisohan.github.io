@@ -249,7 +249,7 @@ void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor)
   vec4 color = texture2D( tDiffuse , pixelUv );
 }
 ```
-
+![](/media/2025_sunave/pixelationCompare.png)
 
 
 ## 8. Sort Events
