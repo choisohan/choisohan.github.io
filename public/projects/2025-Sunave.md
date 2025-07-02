@@ -117,8 +117,8 @@ Since its name is "sunset avenue", creating the right sunset is the most importa
 This sky is created procedurally. I twisted the images and deformed the color on the surface. this kind of work is shader development.
 Since three.js is WebGL based, the shader I had to work on was .GLSL (OpenGL Shader Language)
 
+<video muted autoplay loop><source src='/media/2025_sunave/sky.mp4'></video>
 
-![](/media/2025_sunave/skyShader.gif)
 
 First, I painted random shape in photoshop and made them as tangent normal. 
 
