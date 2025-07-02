@@ -101,10 +101,10 @@ Also it will have a hook that triggers when any new events is created or deleted
 But unfortuately, I had a running of my time, I choose the quickest way. Bulk buying.
 
 
-#### 🤷‍♀️Why Calendar?
-There used to be a routine builder on the previous version of this project. ( a couple years ago )
-house acts as routine the user set up. Open the curtain. close the curtain. likda thing
-I aborted this whoel feature after I spend ages to build it, because the more I build it, it turns out just regular calendar. haha. you live and learn.
+> **🤷‍♀️Why Calendar?**
+> There used to be a routine builder on the previous version of this project. ( a couple years ago )
+> house acts as routine the user set up. Open the curtain. close the curtain. likda thing
+> I aborted this whoel feature after I spend ages to build it, because the more I build it, it turns out just regular calendar. haha. you live and learn.
 
 
 

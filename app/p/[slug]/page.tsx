@@ -37,9 +37,7 @@ const PostPage = ( props:any ) => {
             <h1 className='text-center mb-5  mr-5' >{post.data.title}</h1>
             <div className='justify-end gap-1 flex mb-10 mr-5' >{
                 post.data.tags.split(',').map( ( tag : string, i : number) =>
-                    <><TagButton name={tag}/>
-                      { i < post.data.tags.length-1 ? ',' :'' }
-                    </>
+                    <TagButton name={tag}/>
                 )}
             </div>
 

@@ -16,11 +16,10 @@ body{
     /*padding : 100px 10px;*/
     max-width: 850px;
     width:100%;
-    min-height: 100vh;
     transform: translateX(250px);
     place-self: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 
 }
 .contentBody >:last-child >div{
@@ -81,15 +80,35 @@ body:has(.open-menu-button.clicked) .contentBody{
 
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px){
     .menu {
-        width:100%;
-        margin:1px !important;
         position:static;
+        align-items: center;
     }
-        .contentBody{
+    .yearlyGridPreview{
+        align-items: center;
+
+    }
+    .contentBody{
+        transform: translateX(0%) !important; 
+    }
+
+}
+
+
+/* for main page*/
+body:has(.page) .menu{
+        position:static;
+        align-items: center;
+}
+body:has(.page) .yearlyGridPreview{
+    align-items: center;
+
+}
+body:has(.page) .contentBody{
     transform: translateX(0%) !important; 
+}
 
-    }
-
+body:has(.page) .thumbnail{
+    height: 250px;
 }

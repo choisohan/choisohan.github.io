@@ -2,10 +2,12 @@
 
 import "./globals.css";
 import YearlyGridPreview from "@/components/Theme_TwoBlocks/YearlyGridPreview";
-import { ToggleButton ,DynamicStyle, Footer } from "@/components/Theme_TwoBlocks/ClientComponents";
+import { ToggleButton , Footer, SiteName , TagButton  } from "@/components/Theme_TwoBlocks/ClientComponents";
 import Link from "next/link";
 import { Suspense } from "react";
 import { LayoutProvider } from "@/components/context/LayoutContext";
+import DynamicStyle from "@/components/Theme_TwoBlocks/DynamicStyle";
+
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
 
@@ -18,10 +20,18 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             <Suspense><DynamicStyle /></Suspense>
             <div className="contentBody">{children}</div>
 
-            <div className="menu flex flex-col m-5">
+            <div className="menu flex flex-col m-5 select-none">
               <span>
+                <SiteName />
+                
+
+
+
+{/*
+
               <Link href='/' className="site-title text-5xl font-serif font-extrabold">ChoiSohan </Link>
               <Suspense><ToggleButton /></Suspense>
+*/}
 
               </span>
               <YearlyGridPreview className='open-target yearlyGridPreview ' />

@@ -59,6 +59,7 @@ body {
     @apply text-8xl;
     @apply font-bold;
     @apply font-serif; 
+    
    /* @apply mt-5; 
     @apply pt-5; */
   }
