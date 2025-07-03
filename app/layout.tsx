@@ -17,14 +17,14 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
           <LayoutProvider>
 
             <Suspense><DynamicStyle /></Suspense>
-            <div className="contentBody">
+            <div className="contentBody [body[focus=true]_&]:!translate-x-0">
               {children}
               </div>
 
 
 
 
-            <div className="sideBar flex flex-col m-5 select-none static !md:static ">
+            <div className="sideBar flex flex-col m-5 select-none static !md:static [body[focus=true]_&]:invisible">
 
 
 

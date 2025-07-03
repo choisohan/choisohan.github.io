@@ -1,6 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import { TagButton } from '@/components/Theme_TwoBlocks/ClientComponents';
+import { TagButton, ToggleButton } from '@/components/Theme_TwoBlocks/ClientComponents';
 import { getProjectMetadatas } from '@/components/ProjectMetadata';
 import { ZoomableImage, ZoomableVideo } from '@/components/Lightbox';
 import CodeBlock from '@/components/CodeBlock';
@@ -30,12 +30,17 @@ const PostPage = ( props:any ) => {
     const post = getPostContent(slug); 
 
     return(
-        <> 
-            <h1 className='text-center mb-5  mr-5' >{post.data.title}</h1>
+        <>
+            <h1 className='text-center mb-5  mr-5 relative' >
+                {post.data.title}
+                <ToggleButton className="absolute top-0 right-0 translate-y-[-100%]" />
+            </h1>
+
             <div className='justify-end gap-1 flex mb-10 mr-5' >{
                 post.data.tags.split(',').map( ( tag : string, i : number) =>
                     <TagButton name={tag}/>
                 )}
+
             </div>
 
 

@@ -113,3 +113,16 @@ body:has(.page) .thumbnail{
     height: 250px;
 }
 
+.focusModeButton:hover::after{
+    content: "Focus Mode";
+    position: absolute;
+    font-size: small;
+    font-weight: bolder;
+    color: rgb(122, 122, 122);
+    font-family: sans-serif;
+    top:-100%;
+    right:-50%;
+    padding: 2px;
+    width: 200%;
+    text-align: center;
+}
