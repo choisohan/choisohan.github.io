@@ -47,8 +47,12 @@ export const ToggleButton = (props:any) =>{
 export const TagButton = (props:any)=>{
     const router = useRouter(); 
 
-    const onClick = ()=>{
-        router.push(`?tags=${props.name.toLowerCase()}`)
+    const onClick = (e: React.MouseEvent)=>{
+      e.preventDefault();
+      //e.stopPropagation(); 
+      // 🛑 prevent bubbling to <Link>
+
+       router.push(`?tags=${props.name.toLowerCase()}`)
     }
 
 

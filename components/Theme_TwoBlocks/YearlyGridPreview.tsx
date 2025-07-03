@@ -26,7 +26,7 @@ const Thumbnail = (props:any)=>{
 }
 
 const ProjectPreview = (item:ProjectMetadata) =>{
-    return <Link href={`/p/${item.slug}`} className={`relative group rounded-md  leading-tight	 overflow-hidden bg-black ${item.tags.replace(/,/g,' ')}`}>
+    return <Link href={`/p/${item.slug}`} className={`project-preview relative group rounded-md  leading-tight overflow-hidden bg-black ${item.tags.toLowerCase().replace(/,/g,' ')}`}>
 
         <Thumbnail path={item.thumbnail} className="object-cover h-32 w-auto group-hover:opacity-50 " />
 
