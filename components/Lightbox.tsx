@@ -34,7 +34,7 @@ function ZoomableImage({ src, alt }: Props) {
         src={src}
         alt={alt}
         onClick={onClick}
-        className="cursor-zoom-in max-w-full h-auto place-self-center "
+        className="cursor-zoom-in max-w-full h-auto place-self-center max-w-[500px] m-5 min-w-[75px] min-h-[100px] bg-gray-200"
       />}
 
 
@@ -87,7 +87,7 @@ export default function ZoomableVideo(
     <video
       {...rest}
       onClick={onClick}
-      className={`cursor-zoom-in max-w-full h-auto block place-self-center  ${className ?? ""}`}
+      className={`cursor-zoom-in max-w-full h-auto block place-self-center max-w-[500px] m-5 min-w-[150px] min-h-[110px] bg-gray-200 ${className ?? ""}`}
     >
       {children}
     </video>
