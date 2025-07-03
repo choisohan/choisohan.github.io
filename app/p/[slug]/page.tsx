@@ -7,6 +7,8 @@ import CodeBlock from '@/components/CodeBlock';
 import ReactMarkdown from 'react-markdown';
 import remarkBreaks from "remark-breaks";
 import rehypeRaw from "rehype-raw";
+import { Suspense } from 'react';
+
 
 const getPostContent = (slug:string) =>{
     const folder = `public/projects/`;
@@ -33,7 +35,8 @@ const PostPage = ( props:any ) => {
         <>
             <h1 className='text-center mb-5  mr-5 relative' >
                 {post.data.title}
-                <ToggleButton className="absolute top-0 right-0 translate-y-[-100%]" />
+<Suspense><ToggleButton className="absolute top-0 right-0 translate-y-[-100%]" /></Suspense>
+
             </h1>
 
             <div className='justify-end gap-1 flex mb-10 mr-5' >{
