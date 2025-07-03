@@ -4,7 +4,7 @@ import { useEffect , useState} from "react"
 import { useRouter } from "next/navigation";
 import { useSearchParams } from 'next/navigation'
 import Link from "next/link";
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin , FaGithub } from 'react-icons/fa';
 
 export const ToggleButton = (props:any) =>{
     const router = useRouter(); 
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="py-6 mt-[100px] place-self-center select-none ">
-                 <div className="place-self-center mb-2">
+                 <div className="place-self-center mb-2 flex gap-2">
                     <SocialMediaLinks />
                  </div>
 
@@ -105,6 +105,17 @@ export const SocialMediaLinks = () =>{
     >
       <FaLinkedin size={24} />
     </a>
+
+    <a
+      href="https://github.com/choisohan"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="text-blue-700 hover:text-blue-900"
+    >
+      <FaGithub size={24} />
+    </a>
+    
     
     </>
 
