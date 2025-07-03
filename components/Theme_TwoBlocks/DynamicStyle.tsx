@@ -7,7 +7,7 @@ import { usePathname, useSearchParams, useRouter } from "next/navigation";
 
 export default function DynamicStyle(){
     const searchParams = useSearchParams(); // for `?f=1`
-  //const pathname = usePathname();
+    const pathname = usePathname();
   //const router = useRouter(); // for navigation (e.g. router.push)
 
     const [styleString, setStyleString] = useState( "" );
@@ -40,6 +40,14 @@ export default function DynamicStyle(){
         }
 
     },[searchParams])//whenevr refresh
+
+    useEffect(()=>{
+        if(pathname.includes('/p/')){
+            document.body.setAttribute('type','blog')
+        }else{
+            document.body.removeAttribute('type');
+        }
+    },[pathname])
 
 
     return <style>{styleString}</style>

@@ -2,8 +2,7 @@
 
 import "./globals.css";
 import YearlyGridPreview from "@/components/Theme_TwoBlocks/YearlyGridPreview";
-import { ToggleButton , Footer, SiteName , TagButton  } from "@/components/Theme_TwoBlocks/ClientComponents";
-import Link from "next/link";
+import { ToggleButton , Footer, SiteName , TagButton, SocialMediaLinks  } from "@/components/Theme_TwoBlocks/ClientComponents";
 import { Suspense } from "react";
 import { LayoutProvider } from "@/components/context/LayoutContext";
 import DynamicStyle from "@/components/Theme_TwoBlocks/DynamicStyle";
@@ -18,25 +17,38 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
           <LayoutProvider>
 
             <Suspense><DynamicStyle /></Suspense>
-            <div className="contentBody">{children}</div>
+            <div className="contentBody">
+              {children}
+              </div>
 
-            <div className="menu flex flex-col m-5 select-none">
-              <span>
+
+
+
+            <div className="flex flex-col m-5 select-none static [body[type=blog]_&]:fixed [body[type=blog]_&]:top-0 [body[type=blog]_&]:left-0"> {/* .menu */}
+
+
+
+              <span className="items-center justify-center self-center   mb-5">
                 <SiteName />
-                
+              <p />
+              </span>
 
+              <span className="items-center  justify-center self-center [body[type=blog]_&]:w-full   mb-5">
+
+              </span>
+
+
+              
+              <YearlyGridPreview className='open-target yearlyGridPreview ' />
+            </div>
 
 
 {/*
-
-              <Link href='/' className="site-title text-5xl font-serif font-extrabold">ChoiSohan </Link>
-              <Suspense><ToggleButton /></Suspense>
+<Suspense><ToggleButton /></Suspense>
 */}
+              <Footer />
 
-              </span>
-              <YearlyGridPreview className='open-target yearlyGridPreview ' />
-            </div>
-            <Footer />
+
           </LayoutProvider>
 
         </body>

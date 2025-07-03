@@ -1,14 +1,11 @@
 import fs from 'fs';
-import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import { TagButton } from '@/components/Theme_TwoBlocks/ClientComponents';
 import { getProjectMetadatas } from '@/components/ProjectMetadata';
 import { ZoomableImage, ZoomableVideo } from '@/components/Lightbox';
 import CodeBlock from '@/components/CodeBlock';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
-
 import rehypeRaw from "rehype-raw";
 
 const getPostContent = (slug:string) =>{

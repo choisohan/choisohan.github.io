@@ -4,7 +4,8 @@ import { useEffect , useContext } from "react"
 import { useRouter } from "next/navigation";
 import { useSearchParams } from 'next/navigation'
 import { LayoutContext } from "../context/LayoutContext";
-
+import Link from "next/link";
+import { FaLinkedin } from 'react-icons/fa';
 
 export const ToggleButton = (props:any) =>{
     const {layout,setLayout} = useContext(LayoutContext);
@@ -59,10 +60,14 @@ export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-6 mt-[100px] place-self-center select-none">
+    <footer className="py-6 mt-[100px] place-self-center select-none ">
+                 <div className="place-self-center mb-2">
+                    <SocialMediaLinks />
+                 </div>
+
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between">
-        <div className="mb-4 md:mb-0">
-          &copy; {currentYear} Choisohan. All rights reserved.
+        <div className="mb-4 md:mb-0 flex">
+          &copy; {currentYear} Choisohan. All rights reserved.     
         </div>
       </div>
     </footer>
@@ -72,7 +77,31 @@ export const Footer: React.FC = () => {
 
 
 export const SiteName = ()=>{
-    return <h1>
-        Just A Human😉<br /> who Makes
-    </h1>
+    return <Link href='/'>
+
+
+<p className="text-center font-serif font-extrabold text-8xl [body[type=blog]_&]:text-4xl">
+        Just A Human😉
+        <br />
+        who Makes
+</p>
+        </Link>   
+
+}
+
+
+export const SocialMediaLinks = () =>{
+    return <>
+        <a
+      href="https://www.linkedin.com/in/mingirl/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+      className="text-blue-700 hover:text-blue-900"
+    >
+      <FaLinkedin size={24} />
+    </a>
+    
+    </>
+
 }

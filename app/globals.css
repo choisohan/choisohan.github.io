@@ -23,7 +23,12 @@ body {
   font-family: 'Roboto', sans-serif;
 
 }
-
+@layer base {
+  ::selection {
+    background-color: #facc15; /* Tailwind yellow-400 */
+    color: black;
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

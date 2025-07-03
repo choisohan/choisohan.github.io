@@ -45,7 +45,6 @@
 .project-preview:hover::after{
     position: absolute;
     content:attr(title);
-    background:grey;
     border-radius: 5px;
     padding:2px 5px;
     color:white;
