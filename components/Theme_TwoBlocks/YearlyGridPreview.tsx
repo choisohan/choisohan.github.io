@@ -48,7 +48,7 @@ const YearlyGridPreview = (props:any)=>{
 
     const projects = getProjectMetadatas(); 
 
-    return <div className={`${props.className} overflow-scroll flex flex-col gap-5 [body[type=blog]_&]:h-screen`} >
+    return <div className={`${props.className} overflow-scroll flex flex-col gap-5 [body[type=blog]_&]:full`} >
         
         {getYears(projects).reverse().map( year =>
 {

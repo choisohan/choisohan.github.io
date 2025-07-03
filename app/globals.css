@@ -101,3 +101,10 @@ a:hover{
   
 }
 
+@layer components {
+  @media (min-width: 1400px) {
+    body[type="blog"] .sideBar{
+      @apply fixed top-0 left-0 h-screen;
+    }
+  }
+}

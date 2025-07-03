@@ -24,11 +24,11 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
 
 
 
-            <div className="flex flex-col m-5 select-none static [body[type=blog]_&]:fixed [body[type=blog]_&]:top-0 [body[type=blog]_&]:left-0"> {/* .menu */}
+            <div className="sideBar flex flex-col m-5 select-none static !md:static ">
 
 
 
-              <span className="items-center justify-center self-center   mb-5">
+              <span className="items-center justify-center self-center  mb-5">
                 <SiteName />
               <p />
               </span>
