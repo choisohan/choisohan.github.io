@@ -17,7 +17,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
           <LayoutProvider>
 
             <Suspense><DynamicStyle /></Suspense>
-            <div className="contentBody [body[focus=true]_&]:!translate-x-0">
+            <div className="contentBody [body[focus=true]_&]:!translate-x-0 justify-self-center align-self-center">
               {children}
               </div>
 
