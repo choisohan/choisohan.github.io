@@ -65,6 +65,8 @@ const PostPage = ( props:any ) => {
                     ol: ({ children }) => <ol className="list-decimal pl-5 space-y-1">{children}</ol>,
                     li: ({ children }) => <li className="text-base">{children}</li>,
 
+                    // Line Change
+                    p: ({ children }) => <p className="my-4">{children}</p>,
 
                     // Callouts
                     blockquote: ({ children }) => (

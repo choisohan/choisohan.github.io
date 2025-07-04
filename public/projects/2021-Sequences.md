@@ -2,7 +2,7 @@
 title: 'Sequences'
 start: '2022-04-01'
 thumbnail: '/media/sequence2.mp4'
-tags: 'art,dev,webGL,real-time,glsl,shader'
+tags: 'shader,webGL,real-time,glsl,art,dev,'
 
 ---
 

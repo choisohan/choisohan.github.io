@@ -65,14 +65,14 @@ body {
     @apply font-bold;
     @apply font-serif; 
     
-   /* @apply mt-5; 
-    @apply pt-5; */
+    @apply mt-5; 
+    @apply pt-5; 
   }
   h2 {
     @apply text-5xl;
     @apply font-bold;
-    @apply mt-4; 
-    @apply pt-4; 
+    @apply mt-16; 
+    @apply pt-6; 
   }
   h3 {
     @apply text-4xl;

@@ -2,7 +2,7 @@
 title: 'That Timeline'
 start: '2023-11-01'
 thumbnail: '/media/thattimeline.png'
-tags: 'developer,reactjs,webdev'
+tags: 'reactjs,webdev,dev'
 ---
 
 ![](/media/thattimeline.png)

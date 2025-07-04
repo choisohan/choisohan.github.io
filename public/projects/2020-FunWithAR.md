@@ -1,7 +1,7 @@
 ---
 title: 'Fun With AR'
 start: '2020-8-01'
-tags: 'art,dev,3d,real-time,xr,ar,mobile'
+tags: 'xr,mobile,real-time,art,dev'
 thumbnail: '/media/ar_turtle.mp4'
 
 ---

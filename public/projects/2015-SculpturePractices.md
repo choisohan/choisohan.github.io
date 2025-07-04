@@ -2,7 +2,7 @@
 title: '2015 Modeling'
 start: '2015-01-10'
 thumbnail: '/media/clay_girl2.jpg'
-tags: 'artist,modeling,sculpt'
+tags: 'art,modeling,sculpt'
 ---
 
 

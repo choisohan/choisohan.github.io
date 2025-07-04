@@ -2,7 +2,7 @@
 title: 'Sketchbook2018'
 start: '2018-03-01'
 thumbnail: '/media/jungle.jpg'
-tags: 'artist,drawing'
+tags: 'art,drawing'
 ---
 <img class='full' src='/media/jungle.jpg' >
 <img class='full' src='/media/chubbyCat.jpg' >

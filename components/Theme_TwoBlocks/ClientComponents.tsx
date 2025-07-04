@@ -68,12 +68,12 @@ export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-6 mt-[100px] place-self-center select-none ">
+    <footer className="py-6 mt-[100px] select-none translate-x-0 place-self-center [body[focus=true]_&]:!translate-x-0  w-full max-w-[850px] px-[40px] mt-[100px] mb-[20px] transition-all duration-200 translate-x-[500px] [body[focus=true]_&]:align-self-center [body[focus=true]_&]:justify-self-center">
                  <div className="place-self-center mb-2 flex gap-2">
                     <SocialMediaLinks />
                  </div>
 
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-center place-content-center">
         <div className="mb-4 md:mb-0 flex">
           &copy; {currentYear} Choisohan. All rights reserved.     
         </div>

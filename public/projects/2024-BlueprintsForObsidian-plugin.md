@@ -1,7 +1,7 @@
 ---
 title: 'Blueprins For Obsidian Plugin'
 start: '2024-02-01'
-tags: 'developer,typescript,unrealEngine,d3js'
+tags: 'd3js,typescript,unrealEngine,dev'
 thumbnail: '/media/UnrealEngineObsidian.png'
 ---
 ![](/media/UnrealEngineObsidian.png)

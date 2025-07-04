@@ -2,7 +2,7 @@
 title: 'Sunave'
 start: '2025-01-11'
 thumbnail: '/media/2025_sunave/7-1-low15.mp4'
-tags: '3D,threeJS,webGL,real-time,reactjs'
+tags: '3D,threeJS,webdev,webGL,real-time,reactjs'
 ---
 
 <video className='full' muted autoplay loop><source src='/media/2025_sunave/7-1-low15.mp4'></video>
@@ -31,12 +31,12 @@ Let’s get started.
 - **Backend Hosting** : Glitch.io
 
 
-To start a JavaScript project, you need a code editor like VS Code.
-Then, install Node.js to use the `npm` command for installing libraries.
-Optionally, Git helps track code changes over time.
+To start a JavaScript project, you need a **code editor** like VS Code.
+Then, install **Node.js** to use the `npm` command for installing libraries.
+Optionally, **Git** helps track code changes over time.
 
-In coding, a library is like a set of pre-made ingredients you can use in your project.
-As a developer, I choose the right libraries and mix them as I want.
+> In coding, a library is like a set of pre-made ingredients you can use in your project.
+> As a developer, you can choose the right libraries and mix them as you want.
 
 ``` command
 npm install react.js three.js react-three-fiber ical.js

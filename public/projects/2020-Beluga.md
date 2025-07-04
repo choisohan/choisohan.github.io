@@ -1,7 +1,7 @@
 ---
 title: 'Beluga'
 start: '2020-12-01'
-tags: 'artist,developer,unity,3d,real-time,computerVision'
+tags: 'unity,3d,real-time,computerVision,art,dev'
 thumbnail: '/media/beluga_2.gif'
 ---
 

@@ -2,7 +2,7 @@
 
 import "./globals.css";
 import YearlyGridPreview from "@/components/Theme_TwoBlocks/YearlyGridPreview";
-import { ToggleButton , Footer, SiteName , TagButton, SocialMediaLinks  } from "@/components/Theme_TwoBlocks/ClientComponents";
+import { Footer, SiteName   } from "@/components/Theme_TwoBlocks/ClientComponents";
 import { Suspense } from "react";
 import { LayoutProvider } from "@/components/context/LayoutContext";
 import DynamicStyle from "@/components/Theme_TwoBlocks/DynamicStyle";
@@ -43,9 +43,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             </div>
 
 
-{/*
-<Suspense><ToggleButton /></Suspense>
-*/}
               <Footer />
 
 

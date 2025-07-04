@@ -2,7 +2,7 @@
 title: 'perspectives'
 start: '2021-02-01'
 thumbnail: '/media/VR_gorilla.mp4'
-tags: 'artist,developer,webGL,real-time,reactjs,modeling,3D'
+tags: 'threejs,webGL,real-time,3D,reactjs,modeling,art,dev'
 
 ---
 

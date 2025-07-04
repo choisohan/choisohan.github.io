@@ -1,8 +1,8 @@
 ---
 title: 'Resolution Party'
 start: '2021-12-01'
-tags: 'art,dev,p5js,googleFirebase'
-thumbnail: '/media/res1.png'
+tags: 'p5js,art,dev,googleFirebase'
+thumbnail: '/media/res1.mp4'
 ---
 
 <video muted autoplay loop><source src='/media/res1.mp4'></video>
