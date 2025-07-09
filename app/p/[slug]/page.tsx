@@ -33,13 +33,13 @@ const PostPage = ( props:any ) => {
 
     return(
         <>
-            <h1 className='text-center mb-5  mr-5 relative' >
+            <h1 className='text-center mb-5  relative' >
                 {post.data.title}
 <Suspense><ToggleButton className="absolute top-0 right-0 translate-y-[-100%]" /></Suspense>
 
             </h1>
 
-            <div className='justify-end gap-1 flex mb-10 mr-5' >{
+            <div className='justify-end gap-1 flex mb-10 flex-wrap' >{
                 post.data.tags.split(',').map( ( tag : string, i : number) =>
                     <TagButton name={tag}/>
                 )}

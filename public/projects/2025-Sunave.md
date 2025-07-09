@@ -85,6 +85,7 @@ What’s happening here:
 Of course, this only runs when a request is made.
 Here’s what the frontend can send to trigger it:
 
+![google calendar offers ical url](/media/2025_sunave/gcal.png)
 
 ```js
 const requestData = { url: icalUrl };
@@ -216,9 +217,22 @@ Then, when rendering a house, the system looks up the right transform from that 
 
 ## 5. Custom Pixelation Effect
 
-While Three.js does have a built-in pixelation effect, it wasn’t quite what I was looking for.
-Luckily, I came across [this article](https://blenderartists.org/t/can-i-somehow-set-up-a-sharp-low-resolution/1323775/5), which helped me achieve exactly the look I wanted.
+I didn’t originally plan to render this in a pixel art style.
+But I’ve always liked the old-school, low-key vibe of pixel art — and it felt like a natural fit for the mood of Sunset Avenue.
+There’s something about it that gives more weight and solidity to the scene than smooth 3D rendering does — kind of like turning a watercolor into thick acrylic paint.
 
+For post-processing effects, I used the [postprocessing](https://www.npmjs.com/package/postprocessing) library — a common choice in Three.js projects.
+It’s great for things like color adjustment and bloom.
+It even has a built-in pixelation effect, but the result wasn’t quite what I wanted.
+
+Take a look at the right side of the comparison below — you’ll notice some strange tiling in the sky gradient.
+That’s called [color banding](https://upload.wikimedia.org/wikipedia/commons/9/9a/Colour_banding_example01.png), and it’s a common issue when compressing images (like tiny GIFs) or using low-res color sampling.
+![](/media/2025_sunave/pixelationCompare.png)
+
+The default pixelation effect samples every block evenly, regardless of how small the color difference is — which makes gradients look chunky and artificial.
+Unfortunately, I couldn’t tweak it enough to fix that.
+
+But then I stumbled upon [this article](https://blenderartists.org/t/can-i-somehow-set-up-a-sharp-low-resolution/1323775/5), which helped me get the exact look I was after:
 
 
 ```glsl
@@ -233,10 +247,15 @@ void mainImage(const in vec4 inputColor, const in vec2 uv, out vec4 outputColor)
   vec4 color = texture2D(tDiffuse, pixelUv);
 }
 ```
-![](/media/2025_sunave/pixelationCompare.png)
 
-You can see the improvement — especially in the sky gradient.
-Sharper, cleaner, just the way I wanted.
+The key here is `float offset = 1.5/pixelSize;`
+That offset shifts the sample point away from the block edge and closer to the center — helping reduce color banding in gradients.
+If the offset is too small, you’ll sample near edges, causing artifacts.
+If it’s too large, you’ll drift too far into the block, possibly distorting the grid and stretching colors slightly.
+
+1.5 turns out to be a sweet spot — smooth gradients, preserved pixelation, and no weird tiling.
+
+PS. Thank you,Matías Fernández and power of internet community :D
 
 
 ## 6. Sort Events
