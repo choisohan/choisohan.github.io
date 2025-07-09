@@ -14,7 +14,7 @@ Would’ve been nice if someone told me earlier that dream’s basically impossi
 (Seriously, have you seen the property market? It’s wild.)
 
 [🏠Sunset Avenue](https://sunave.netlify.app/) is my way of holding onto that vibrant childhood dream.
-Each house syncs with an online calendar — so you can see how vibrant everyone’s life is, no matter where they are.
+Each 3D house syncs with an online calendar — so you can see how vibrant everyone’s life is, no matter where they are.
 
 In this post, I’ll quickly walk through how I built it.
 No heavy tech talk — just a simple, fun read.
@@ -371,9 +371,9 @@ const House = () => {
 ## 9. Lastly
 
 This project isn’t perfect yet, but I’m happy to share the progress I’ve made so far.
-If you have any questions while reading through this, feel free to reach out — I’d be glad to chat.
 
-There are still tons of features I’d love to add:
-more animation on the houses and streets, interesting events, maybe even connecting it with social media.
+I still have plenty of ideas I’d love to add — more features, polish, maybe even a few surprises.
+But time’s a bit limited these days, so I’ll be contributing in small bits when I can.
 
-If any of this sounds fun to you and you'd like to be involved, don’t hesitate to get in touch. 😄
+Anyway, thank you so much for reading!
+If you have any questions, thoughts, or just want to chat — I’d be happy to hear from you.
