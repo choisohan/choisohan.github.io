@@ -5,6 +5,7 @@ tags: 'unity,3d,real-time,computerVision,art,dev'
 thumbnail: '/media/beluga_2.gif'
 ---
 
+![](/media/beluga_2.gif)
 
 Beluga is one of early interactive animal project. I strategically opted for a whale because 90% of the animation involves the spine, making it simpler than limb animations.
 
